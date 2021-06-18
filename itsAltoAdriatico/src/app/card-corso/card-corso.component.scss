@@ -1,0 +1,28 @@
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  display: inline-block;
+  position: relative;
+}
+
+figure img {
+  display: block;
+}
+
+figure figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(gray200);
+    backdrop-filter: blur(30px);
+  color: var(gray900);
+  padding: 10px;
+  border-radius: 5px;
+  width: 515px;
+  height: 154px;
+}
