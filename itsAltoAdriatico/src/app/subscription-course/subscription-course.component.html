@@ -2,7 +2,7 @@
   <figure>
     <img src="../../assets/images/chairs.png"
          alt="Image"
-         width="100%" />
+         style="width: 100%" />
     <figcaption>
       <h1>ISCRIZIONE SELEZIONI FRONT END & USER DEVELOPER</h1>
     </figcaption>
@@ -15,7 +15,7 @@
     <div class="col-sm-8">
 
       <form>
-        <div class="personal-info rounded">
+        <div class="card round mb-3">
           <h3>I tuoi dati anagrafici</h3>
           <div class="form-row">
             <div class="form-floating mb-3 col-md-6">
@@ -58,7 +58,118 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary-700">Sign in</button>
+
+
+        <div class="card round mb-3">
+          <h3>Dati documento di riconoscimento</h3>
+          <div class="form-row">
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text" class="form-control" id="floatingType" placeholder="Tipo di documento">
+              <label for="floatingType">Tipo di documento *</label>
+            </div>
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text" class="form-control" id="floatingNumber" placeholder="Numero documento">
+              <label for="floatingNumber">Numero documento *</label>
+            </div>
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text" class="form-control" id="floatingReleased" placeholder="Rilasciato da">
+              <label for="floatingReleased">Rilasciato da *</label>
+            </div>
+            <div class="form-floating mb-3 col-md-3">
+              <input type="date" class="form-control" placeholder="Data di scadenza">
+              <label for="navigators">Data di scadenza *</label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card round mb-3">
+          <h3>I tuoi contatti</h3>
+          <div class="form-row">
+            <div class="form-floating mb-3 col-md-6">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="Email">
+              <label for="floatingEmail">Email *</label>
+            </div>
+            <div class="form-floating mb-3 col-md-6">
+              <input type="text" class="form-control" id="floatingPhone" placeholder="Phone">
+              <label for="floatingPhone">Cellulare</label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card round mb-3">
+          <h3>La tua scuola</h3>
+          <div class="form-row">
+            <div class="form-floating mb-3 col-md-6">
+              <input type="text" class="form-control" id="floatingEmailSchool" placeholder="Scuola">
+              <label for="floatingSchool">Istituto di provenienza *</label>
+            </div>
+            <div class="form-floating mb-3 col-md-3">
+              <input type="number" class="form-control" id="floatingYear" placeholder="Anno">
+              <label for="floatingYear">Anno conseguimento diploma </label>
+            </div>
+            <div class="form-floating mb-3 col-md-3">
+              <input type="number" class="form-control" id="floatingVote" placeholder="Voto">
+              <label for="floatingVote">Voto diploma </label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card round mb-3">
+          <h3>Come ci hai conosciuti?</h3>
+          <div class="textArea">
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width:100%"></textarea>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card round mb-3">
+          <h3>Privacy</h3>
+          <div class="form-row">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Autorizzazione trattamento dati personali GDPR 2016/679 *
+              </label>
+            </div>
+          </div>
+          <div class="form-row yellowed">
+            <div class="allertText">
+              <label>Ti preghiamo di prenderne visione dei requisiti per la partecipazione alle selezioni di ITS Kennedy ICT Pordenone.</label>
+              <ul>
+                <li>
+                  La partecipazione alle selezioni è riservata alle persone in possesso di Diploma di Scuola Superiore, qualunque indirizzo.
+                </li>
+                <li>
+                  I documenti richiesti per finalizzare l’iscrizione sono:
+                </li>
+                <li>
+                  Copia della Carta di Identità e Codice Fiscale in corso di validità
+                </li>
+                <li>
+                  Copia del Diploma di scuola superiore o autodichiarazione di possesso dello stesso
+                </li>
+                <li>
+                  Curriculum Vitae preferibilmente in formato europeo
+                </li>
+                <li>
+                  Eventuali certificazioni di lingua inglese o certificazioni informatiche già in tuo possesso per un valutazione dei titoli
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="button d-flex flex-row-reverse">
+          <button type="submit" class="btn btn-primary-700">Sign in</button>
+        </div>
+
       </form>
 
     </div>
