@@ -1,0 +1,27 @@
+
+
+.background-image-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-image: url('../assets/placeholders/full-width-image.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    .blurred-background-title {
+    text-align: center;
+    word-wrap: break-word;
+    background: var(gray200);
+    backdrop-filter: blur(30px);
+    color: var(gray900);
+    padding: 2%;
+    border-radius: 5px;
+    width: 80%;
+    height: fit-content;
+  }
+}
