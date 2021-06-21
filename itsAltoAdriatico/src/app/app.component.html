@@ -1,39 +1,129 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <div class="container-fluid navbar-container">
+      <div>
+        <img class="logo-navbar" src="../assets/logoITSALtoAdriatico.webp" alt="Logo Its Alto Adriatico">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Chi Siamo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corsi
             </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Orientamento</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Studenti
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Aziende
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sedi</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Registrazione</a>
+            </li>
+          </ul>
+      </div>
+
     </div>
-</nav>
-<router-outlet></router-outlet>
+  </nav>
+<router-outlet class="router-outlet-container"></router-outlet>
+
+
+
+ <footer class="footer mt-auto">
+  <div class="container-div-footer">
+      <div class="columns-div">
+      <h6>ITS ALTO ADRIATICO – PORDENONE</h6>
+      <p>Istituto Tecnico Superiore, riconosciuto dal MIUR, per la formazione di persone di eccellenza su tematiche ad alto contenuto tecnologico. Le tematiche sono Data Manager, Cloud Computing, Internet of Things, Digital & Web App, Database Manager. Due anni di alta formazione per preparare le professioni del futuro!</p>
+    </div>
+
+    <div  class="columns-div">
+      <h6>I NOSTRI CONTATTI</h6>
+      <h6>ITS Alto Adriatico</h6>
+      
+      <p>Fondazione Istituto Superiore per le tecnologie dell’informazione e della comunicazione Alto Adriatico Via Prasecco 3a - 33170 Pordenone</p>
+    
+      <span>
+        C.F. 91079520937
+      </span>
+
+      <span> <i class="pi pi-phone"></i> +39 0434 1697221 </span>
+      <span> <i class="pi pi-envelope"></i> PEC: fondazioneitskennedy@pec.it </span>
+    </div>
+    
+    <div  class="columns-div">
+      <h6>RESTA IN CONTATTO CON NOI</h6>
+      <div>
+        <i class="pi pi-facebook i-contatti-social"></i>
+        <i class="pi pi-youtube i-contatti-social"></i>
+        <i class="pi pi-envelope i-contatti-social"></i>
+      </div>
+    </div>
+    
+    <div  class="columns-div">
+      <h6>Menu</h6>
+      <ul>
+        <li><a class="dropdown-item"  href="#">La Fondazione Its: i soci e partner</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item"  href="#">Amministrazione trasparente</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item"  href="#">Archivio corsi</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">News</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Linkedin</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+        <li><hr class="dropdown-divider"></li>
+      </ul>
+    </div>
+  </div>
+  
+</footer> 
