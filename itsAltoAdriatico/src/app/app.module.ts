@@ -8,11 +8,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 import { KnobModule } from 'primeng/knob';
 import { ChartModule } from 'primeng/chart';
+import { OpenDayCardComponent } from './open-day-card/open-day-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    OpenDayCardComponent
   ],
   imports: [
     BrowserModule,
