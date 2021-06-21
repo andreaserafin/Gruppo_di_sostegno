@@ -1,0 +1,47 @@
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  display: inline-block;
+  position: relative;
+}
+
+figure img {
+  display: block;
+}
+
+figure figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bs-grey200);
+  backdrop-filter: blur(30px);
+  color: var(--bs-gray900);
+  padding: 10px;
+  border-radius: 5px;
+  width: 595px;
+  height: 154px;
+  opacity: 70%;
+}
+
+.personal-info {
+  background-color: var(--bs-grey50);
+  border-radius: inherit;
+}
+
+h1 {
+  color: var(--bs-gray900);   
+}
+
+.btn-primary-700 {
+  background-color: var(--bs-primary700);
+  color: white;
+}
+
+label {
+  font-size: 16px; //da rimuovere 
+}
