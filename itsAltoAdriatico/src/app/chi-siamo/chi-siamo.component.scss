@@ -1,0 +1,56 @@
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  display: inline-block;
+  position: relative;
+}
+
+figure img {
+  display: block;
+}
+
+figure figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(gray200);
+  backdrop-filter: blur(30px);
+  color: var(gray900);
+  padding: 10px;
+  border-radius: 5px;
+  width: 515px;
+  height: 154px;
+}
+.title_page{
+    text-align: center;
+    margin-top: 35px;
+}
+.treck_container{
+    margin-top: 20px;
+    width: auto;
+    height: 34px;
+    border-radius: 10px;
+    background-color: var(--bs-grey100);
+    color: var(--bs-primary900);
+    
+}
+.treck-text{
+    padding: 4px;
+    text-align: center;
+    margin: 5px;
+}
+.treck{
+    margin-top: 25px;
+    color: var(--bs-primary900);
+}
+.info_container{
+    margin-top: 30px;
+    border-top: 4px solid var(--bs-grey300);
+    border-bottom: 4px solid var(--bs-grey300);
+    padding: 25px;
+}
