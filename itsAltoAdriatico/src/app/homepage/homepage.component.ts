@@ -23,7 +23,8 @@ export class HomepageComponent implements OnInit {
         {
           data: [97, 3],
           backgroundColor: ["#F41D1A", "#FFFFFF"],
-          borderWidth: 0
+          borderWidth: 0,
+          strokeWidth: 40
         }]
     };
     this.graph2 = {
