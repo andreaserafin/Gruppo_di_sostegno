@@ -1,74 +1,37 @@
-$theme-colors: (
-    "primary900": #c80000,
-    "primary800": #d5000b,
-    "primary700": #e20613,
-    "primary600": #f41d1a,
-    "primary500": #ff2d17,
-    "primary400": #fe443c,
-    "primary300": #f46a65,
-    "primary200": #fb9591,
-    "primary100": #ffcace,
-    "primary50": #ffeaed,
-
-    "success900": #0e6410,
-    "success800": #298324,
-    "success700": #35942f,
-    "success600": #41a63a,
-    "success500": #4bb543,
-    "success400": #66c060,
-    "success300": #82cc7d,
-    "success200": #a6d9a3,
-    "success100": #c9e8c7,
-    "success50": #e8f6e8,
-
-    "grey900": #1f1f1f,
-    "grey800": #404040,
-    "grey700": #5f5f5f,
-    "grey600": #727272,
-    "grey500": #9b9b9b,
-    "grey400": #bbbbbb,
-    "grey300": #dedede,
-    "grey200": #ececec,
-    "grey100": #f4f4f4,
-    "grey50": #fafafa,
-
-    "link": #0645ad
-  );
-  
-
-
-h1{
-  font-family: 'roboto-regular';
-  font-size: 40px;
-  line-height: 52px;
-}
-  
-h2{
-  font-family: 'roboto-regular';
-  font-size: 32px;
-  line-height: 36px;
+$theme-colors: ( "primary900": #c80000, "primary800": #d5000b, "primary700": #e20613, "primary600": #f41d1a, "primary500": #ff2d17, "primary400": #fe443c, "primary300": #f46a65, "primary200": #fb9591, "primary100": #ffcace, "primary50": #ffeaed, "success900": #0e6410, "success800": #298324, "success700": #35942f, "success600": #41a63a, "success500": #4bb543, "success400": #66c060, "success300": #82cc7d, "success200": #a6d9a3, "success100": #c9e8c7, "success50": #e8f6e8, "grey900": #1f1f1f, "grey800": #404040, "grey700": #5f5f5f, "grey600": #727272, "grey500": #9b9b9b, "grey400": #bbbbbb, "grey300": #dedede, "grey200": #ececec, "grey100": #f4f4f4, "grey50": #fafafa, "link": #0645ad);
+h1 {
+    font-family: 'roboto-regular';
+    font-size: 40px;
+    line-height: 52px;
 }
 
-h3{
-  font-family: 'roboto-regular';
-  font-size: 24px;
-  line-height: 28px;
+h2 {
+    font-family: 'roboto-regular';
+    font-size: 32px;
+    line-height: 36px;
 }
 
-h4{
-  font-family: 'roboto-regular';
-  font-size: 20px;
-  line-height: 24px;
+h3 {
+    font-family: 'roboto-regular';
+    font-size: 24px;
+    line-height: 28px;
 }
 
-body{
-  font-family: 'roboto-regular';
-  font-size: 16px;
-  line-height: 20px;
+h4 {
+    font-family: 'roboto-regular';
+    font-size: 20px;
+    line-height: 24px;
 }
 
-label{
-  font-family: 'roboto-regular';
-  font-size: 12px;
-  line-height: 16px;
+body,
+p {
+    font-family: 'roboto-regular';
+    font-size: 16px;
+    line-height: 20px;
+}
+
+label {
+    font-family: 'roboto-regular';
+    font-size: 16px;
+    line-height: 20px;
 }
