@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\assets"
+    "\\src\\app",
+    "\\src\\app\\subscription-course",
+    "\\src\\assets",
+    "\\src\\assets\\images",
+    "\\src\\scss_variables"
   ],
-  "SelectedNode": "\\src\\app",
+  "SelectedNode": "\\src\\app\\subscription-course\\subscription-course.component.ts",
   "PreviewInSolutionExplorer": false
 }

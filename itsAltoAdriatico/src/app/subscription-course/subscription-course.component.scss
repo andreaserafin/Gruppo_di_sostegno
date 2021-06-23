@@ -32,13 +32,12 @@ figure figcaption {
   overflow-x: hidden;
 }
 
-.card {
+.section {
   background-color: var(--bs-grey100);
-  border-radius: inherit;
   border: none;
-  margin-top: 2%;
-  margin-right: 5%;
-  margin-left: 2%;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  margin-left: 2rem;
   border-radius: 10px;
 }
 
@@ -90,4 +89,28 @@ h3 {
 
 .allertText {
   margin: 2%;
+}
+
+.card-header {
+  background-color: var(--bs-primary700);
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.details {
+  background-color: var(--bs-grey100);
+  border: none;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+.form {
+  background-color: var(--bs-grey100);
+  border: none;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 5rem;
+  border-radius: 10px;
 }
