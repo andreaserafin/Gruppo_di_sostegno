@@ -34,5 +34,49 @@ Per risolverlo è necessario fare un downgrade di 'chart.js' alla versione 2.9.4
 
 
 # Icone
-Utilizziamo tutti le stesse icone, secondo me quindi utilizziamo quelle di Primeng che sono già installate e easy 
-controllate qui: https://www.primefaces.org/primeng/showcase/#/icons
+Utilizziamo tutti le stesse icone, quindi le icone di bootstrap
+
+
+# Classi immagine Header pagina
+
+Per quanto riguarda gli header delle pagine con l'immagine di sfondo e il titolo sul blur dovete semplicemente usare questa struttura:
+
+``` 
+  <div class="background-image-heading classe_personalizzata_con_immagine_di_bg">
+    <div class="blurred-background-title">
+      <h1>Title</h1>
+    </div>
+  </div>
+```
+
+Poi nel file .scss del vostro componente dovrete fare uan classe, che in questo caso è " **classe_personalizzata_con_immagine_di_bg**
+con i seguenti attributi
+
+```
+
+.classe_personalizzata_con_immagine_di_bg{
+    background-image: url('url_immagine');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+```
+
+# Classe sottotitoli con gradiente rosso
+
+Nel file global-styles.scss c'è una classe per i sottotitoli il gioco è lo stesso di prima, quindi utilizzate qusta struttura e chiamate la classe subtitle-gradient
+
+``` 
+  <div  class="subtitle-gradient">
+    <h3>Sottotitolo</h3>
+  </div>
+```
+
+# Bottoni 
+
+Il button avrà classe **btn** di bootstrap e poi utilizzate la classe che c'è in *global-styles.scss* che si chiama button-outline o button-fill
+
+
+é una classe generica quindi se dovrete allungare il bottone o cambiarci il colore dovrete fare delle classi apposite all'interno del componente che usate.
+
