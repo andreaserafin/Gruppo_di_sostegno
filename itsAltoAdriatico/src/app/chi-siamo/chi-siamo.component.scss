@@ -61,29 +61,57 @@ figure figcaption {
   font-style: var(--bs-h4);
 }
 
-.offerts_container {
-  border-bottom: 4px solid var(--bs-grey300);
-  padding: 10px;
-    
-  .container_offerts {
-    margin-top: 40px;
-    align-items: center;
+.offerts_row {
+  .container_v {
+    padding: 10px;
 
-    .img_offerts {
-      width: 150px;
-      height: auto;
+    .container_offerts {
+      margin-top: 40px;
+      align-items: center;
 
+      .img_offerts {
+        margin-left: 220px;
+        margin-bottom: 10px;
+
+      }
+
+      .description_txt {
+        padding: 20px;
+        text-align: center;
+        font-style: var(--bs-body);
+      }
+
+      .title_txt {
+        text-align: center;
+        font-style: var(--bs-h3);
+      }
     }
+  }
 
-    .description_txt {
-      padding: 20px;
-      text-align: center;
-      font-style: var(--bs-body);
-    }
+  .offerts_container {
+    border-bottom: 4px solid var(--bs-grey300);
+    padding: 10px;
 
-    .title_txt {
-      text-align: center;
-      font-style: var(--bs-h3);
+    .container_offerts {
+      margin-top: 40px;
+      align-items: center;
+
+      .img_offerts {
+        margin-left: 220px;
+        margin-bottom: 10px;
+
+      }
+
+      .description_txt {
+        padding: 20px;
+        text-align: center;
+        font-style: var(--bs-body);
+      }
+
+      .title_txt {
+        text-align: center;
+        font-style: var(--bs-h3);
+      }
     }
   }
 }
