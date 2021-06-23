@@ -37,9 +37,7 @@
                             "src/styles.scss",
                             "src/scss_variables/font-faces.scss"
                         ],
-                        "scripts": [
-                            "node_modules/chart.js/dist/Chart.js"
-                        ]
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
