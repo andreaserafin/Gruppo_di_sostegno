@@ -1,0 +1,25 @@
+.news-container {
+  max-width: 375px;
+  max-height: 500px;
+  background-color: var(--bs-grey50);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.thumbnail-news {
+  background-image: url("../../assets/img/news.png");
+  width: 353px;
+  height: 250px;
+  z-index: 1;
+}
+
+.fade-img {
+  background-image: linear-gradient(to bottom, #ffffff00, #fafafa);
+  width: 353px;
+  height: 250px;
+  z-index: 1000;
+}
