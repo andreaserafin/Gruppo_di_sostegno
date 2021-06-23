@@ -10,6 +10,8 @@ export class HomepageComponent implements OnInit {
   graph1: any;
   graph2: any;
   graph3: any;
+  options: any;
+  value: number = 0;
 
   constructor() { }
 
@@ -25,7 +27,8 @@ export class HomepageComponent implements OnInit {
           backgroundColor: ["#F41D1A", "#FFFFFF"],
           borderWidth: 0,
           strokeWidth: 40
-        }]
+        }
+      ]
     };
     this.graph2 = {
       datasets: [
@@ -43,6 +46,5 @@ export class HomepageComponent implements OnInit {
           borderWidth: 0
         }]
     };
-  }
-
+  };
 }

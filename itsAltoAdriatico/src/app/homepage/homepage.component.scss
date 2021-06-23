@@ -13,97 +13,114 @@ h1 {
 .container-imagehome {
     overflow-x: hidden;
     background-image: url(../../assets/images/itsKennedy2.jpg);
-    // background: linear-gradient(
-    //     transparent, mistyrose),
-    //     url(../../assets/images/itsKennedy2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
 
-    &::before,
-    &::after {
-        position: absolute;
-        background: rgb(222,222,222);
+    &::before {
+        background: rgb(222, 222, 222);
         width: 100%;
-        height: 32vh;
+        height: 15vh;
         display: block;
         content: "";
+        background: linear-gradient(
+            0deg,
+            rgba(222, 222, 222, 0) 0%,
+            rgba(248, 248, 248, 0.589) 65%,
+            rgba(255, 255, 255, 1) 100%
+        );
     }
 
-    &::before {
-        background: linear-gradient(0deg, rgba(222, 222, 222, 0) 0%, rgba(248, 248, 248, 0.589) 65%, rgba(255,255,255,1) 100%);
-    }
-
-    &::after {
-        top: auto;
-        bottom: 0;
-        z-index: 0;
-        background: linear-gradient(180deg, rgba(222,222,222,0) 0%, rgba(248,248,248,0.589) 65%, rgba(255,255,255,1) 100%);
-    }
+    // &::after {
+    //     top: auto;
+    //     bottom: 0;
+    //     z-index: 0;
+    //     background: linear-gradient(
+    //         180deg,
+    //         rgba(222, 222, 222, 0) 0%,
+    //         rgba(248, 248, 248, 0.589) 65%,
+    //         rgba(255, 255, 255, 1) 100%
+    //     );
+    // }
 
     .card-schoolimage {
         border-radius: 0px 10px 10px 0px;
-        margin-top: 80px;
+        margin-bottom: 80px;
         background-color: var(--bs-grey50);
+        opacity: 0.95;
 
         .card-body {
-            padding-left: 40px;
-            padding-right: 40px;
+            padding: 30px;
+            .card-title {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
         }
-    }
-}
-
-.chart-row {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-left: auto;
-    margin-right: 5%;
-    height: auto;
-    width: 900px;
-    background-color: var(--bs-grey50);
-    border-radius: 10px;
-    opacity: 0.95;
-
-    .chart-column {
-        padding-top: 10px;
-
-        width: 300px;
-        h4 {
-            text-align: center;
-            color: black;
-            font-family: "roboto-bold";
+        .chart-row {
+            margin-top: 20px;
+            h4 {
+                position: absolute;
+                font-family: "roboto bold";
+                color: black;
+            }
+        }
+        .chart-column {
+            p {
+                text-align: center;
+                color: black;
+                font-family: "roboto-bold";
+                margin-top: 20px;
+            }
         }
     }
 }
 
 .card-button-row {
-    margin-top: 20px;
+    margin-bottom: 3rem;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .column-card-button {
+        padding: 0%;
+    }
+    .card-button {
+        width: 35rem;
+        border-radius: 10px;
+        background-color: var(--bs-grey50);
+        opacity: 0.95;
+        z-index: 2;
 
-    .row-card {
-
-        .card-button {
-            width: 100%;
-            border-radius: 10px;
-            background-color: var(--bs-grey50);
-            opacity: 0.95;
-            z-index: 2;
-
-            .image-card-button {
-                width: 150px;
-                height: 170px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    padding: 5px;
-                    border-radius: 10px;
-                }
+        .image-card-button {
+            width: 30%;
+            height: auto;
+           
+            &::before{
+                width: 100%;
+                display: block;
+                content: "";
+                background: linear-gradient(
+                    90deg,
+                    rgb(0, 0, 0) 0%,
+                    rgba(248, 248, 248, 0.589) 65%,
+                    rgba(255, 255, 255, 1) 100%
+                );
             }
-            .card-body {
+            img {
+                width: 100%;
                 height: 100%;
-                text-align: center;
-                .card-title {
-                    font-family: "roboto-bold";
-                }
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+
+        
+
+
+        .card-body {
+            text-align: center;
+            .card-title {
+                font-family: "roboto-bold";
             }
         }
     }

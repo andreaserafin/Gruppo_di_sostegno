@@ -1,73 +1,78 @@
-<!-- <img src="../../assets/images/itsKennedy.jpg" class="img-fluid imagehome" alt="ITS Kennedy"> -->
 <div class="container-imagehome">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-6">
             <div class="card card-schoolimage">
                 <div class="card-body">
-                    <h1 class="card-title">CHI SIAMO...</h1>
-                    <p class="card-text">Gli ITS sono scuole di eccellenza ad alta specializzazione tecnologica. Promuovono corsi post diploma di specializzazione tecnica che hanno un approccio pratico alle materie e una forte relazione con le aziende facilitando allo studente
-                        l’inserimento nel mondo del lavoro.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row chart-row flex-row-reverse">
-        <div class="chart-column">
-            <p-chart type="doughnut" [data]="graph1" width="300">
-            </p-chart>
-            <div style="text-align: center;">
-                <h4>Tasso di occupazione dei diplomati ITS</h4>
-            </div>
-        </div>
-        <div class="chart-column">
-            <p-chart type="doughnut" [data]="graph2" width="300">
-            </p-chart>
-            <div style="text-align: center;">
-                <h4>Tasso di impiego coerente con il percorso di studio</h4>
-            </div>
-        </div>
-        <div class="chart-column">
-            <p-chart type="doughnut" [data]="graph3" width="300">
-            </p-chart>
-            <div style="text-align: center;">
-                <h4>Docenza proveniente dal mondo imprenditoriale</h4>
-            </div>
-        </div>
-    </div>
-    <div class="card-button-row">
-        <div class="row row-card">
-            <div class="col-sm-5">
-                <div class="card card-button">
                     <div class="row">
-                        <div class="image-card-button col-4">
-                            <img src="../../assets/images/company.jpg" alt="Aziende" width="150px">
+                        <h1 class="card-title">CHI SIAMO...</h1>
+                        <p class="card-text">Gli ITS sono scuole di eccellenza ad alta specializzazione tecnologica.
+                            Promuovono corsi post diploma di specializzazione tecnica che hanno un approccio pratico
+                            alle materie e una forte relazione con le aziende facilitando allo studente
+                            l’inserimento nel mondo del lavoro.</p>
+                    </div>
+                    <div class="row chart-row">
+                        <div class="col-4 chart-column">
+                            <!-- <p-chart type="doughnut" [data]="graph1" [options]="options">
+                            </p-chart> -->
+                            <p-knob valueTemplate=50 [readonly]=true [min]="0" [max]="100" rangeColor="#F41D1A"></p-knob>
+                            <div style="text-align: center;">
+                                <p>Tasso di occupazione dei diplomati ITS</p>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h3 class="card-title">Sei uno studente?</h3>
-                                <p class="card-text">Scopri i nostri corsi formativi e scegli quello che più ti interessa.
-                                </p>
-                                <button type="button" class="btn btn-primary700">Scopri di più</button>
+                        <div class="col-4 chart-column">
+                            <p-chart type="doughnut" [data]="graph2">
+                            </p-chart>
+                            <div style="text-align: center;">
+                                <p>Tasso di impiego coerente con il percorso di studio</p>
+                            </div>
+                        </div>
+                        <div class="col-4 chart-column">
+                            <p-chart type="doughnut" [data]="graph3">
+                            </p-chart>
+                            <div style="text-align: center;">
+                                <p>Docenza proveniente dal mondo imprenditoriale</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="offset-2 col-sm-5 ">
-                <div class="card card-button ">
-                    <div class="row ">
-                        <div class="image-card-button col-4 ">
-                            <img src="../../assets/images/meeting.jpg " alt="Aziende " width="150px">
+        </div>
+    </div>
+    <div class="card-button-row">
+        <div class="column-card-button">
+            <div class="card card-button">
+                <div class="row">
+                    <div class="col-4 image-card-button">
+                        <img src="../../assets/images/company.jpg" alt="Scuole">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Sei uno studente?</h3>
+                            <p class="card-text">Scopri i nostri corsi formativi e scegli quello che più ti
+                                interessa.
+                            </p>
+                            <button type="button" class="btn btn-primary700">
+                                <i class="bi bi-building"></i>
+                                Scopri di più
+                            </button>
                         </div>
-                        <div class="col-8 ">
-                            <div class="card-body ">
-                                <h3 class="card-title ">Sei un'azienda?</h3>
-                                <p class="card-text ">Seleziona tra i nostri studenti i profili più adatti per te. </p>
-                                <button type="button " class="btn btn-primary700 ">
-                                    <i class="pi pi-briefcase"></i>
-                                    Scopri di più
-                                </button>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column-card-button">
+            <div class="card card-button">
+                <div class="row">
+                    <div class="col-4 image-card-button">
+                        <img src="../../assets/images/black.png" alt="Aziende">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body ">
+                            <h3 class="card-title ">Sei un'azienda?</h3>
+                            <p class="card-text ">Seleziona tra i nostri studenti i profili più adatti per te. </p>
+                            <button type="button " class="btn btn-primary700">
+                                Scopri di più
+                            </button>
                         </div>
                     </div>
                 </div>
