@@ -1,36 +1,6 @@
-figure,
-figcaption {
-  margin: 0;
-  padding: 0;
-}
-
-figure {
-  display: inline-block;
-  position: relative;
-}
-
-figure img {
-  display: block;
-}
-
-figure figcaption {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: var(gray200);
-  backdrop-filter: blur(30px);
-  color: var(gray900);
-  padding: 10px;
-  border-radius: 5px;
-  width: 515px;
-  height: 154px;
-}
-
-.header_title {
-  text-align: center;
-  margin-top: 35px;
-}
+.classe_personalizzata_con_immagine_di_bg{
+  background-image: url(../../assets/img/banner-chisiamo.jpg);
+} 
 
 .treck_container {
   margin-top: 20px;
@@ -50,7 +20,7 @@ figure figcaption {
 
 .treck {
   margin-top: 25px;
-  color: var(--bs-primary900);
+  color: var(--bs-primary700);
 }
 
 .info_container {
@@ -118,6 +88,7 @@ figure figcaption {
 
 .container_corsi {
   margin-top: 30px;
+  margin-bottom: 20px;
   background-color: var(--bs-grey50);
   border-radius: 30px;
 
@@ -135,10 +106,5 @@ figure figcaption {
   .button_corsi {
     margin-top: 20px;
     margin-bottom: 30px;
-
-    width: 412px;
-    height: 50px;
-    background-color: var(--bs-primary700);
-    color: #ffff;
   }
 }
