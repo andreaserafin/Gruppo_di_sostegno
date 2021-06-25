@@ -11,13 +11,13 @@
     text-align: center;
     word-wrap: break-word;
     background: var(gray200);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(5px) contrast(35%) brightness(1.5);
     color: var(gray900);
-    padding: 2%;
+    padding: 2rem 6rem;
     border-radius: 5px;
     width: 80%;
     height: fit-content;
-    margin: 2rem 4rem;
+    margin: 4rem;
   }
 }
 
