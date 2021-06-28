@@ -41,8 +41,54 @@ footer{
                 padding-left: 0;
                 li{
                     text-align: left;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis
                 }
             }
         }
     }
 }
+
+@media screen and (max-width: 780px) {
+    footer{
+        .container-div-footer{
+    
+            margin-top: 2rem;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 20px 30px;
+            background-color: var(--bs-grey200);
+    
+            .columns-div{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 100%;
+                margin: 10px;
+                
+                p{
+                    width: 100%;
+                }
+
+                .i-contatti-social{
+                    font-size: 1.5rem;
+                    margin: 2%;
+                }
+    
+                ul{
+                    list-style-type: none;
+                    padding-left: 0;
+                    li{
+                        text-align: left;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+  }
