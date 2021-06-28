@@ -18,8 +18,34 @@
 }
 
 .fade-img {
-  background-image: linear-gradient(to bottom, #ffffff00, #fafafa);
+  margin-top: 3%;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   width: 353px;
   height: 250px;
-  z-index: 1000;
+}
+
+.body-container{
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-top: -5%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.news-title{
+  font-family: ('roboto-bold');
+}
+
+.cardbutton {
+  width: fit-content;
+  align-self: flex-end;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  font-family: ('roboto-bold');
 }

@@ -6,8 +6,17 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+}
+
+.openday-header{
+  margin-top:5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .title {

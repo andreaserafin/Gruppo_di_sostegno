@@ -5,10 +5,10 @@ import { OpenDayCardComponent } from './open-day-card/open-day-card.component';
 
 
 const routes: Routes = [{
-  path:'openday', component: OpenDayCardComponent
+  path:'open-day-card', component: OpenDayCardComponent
 },
 {
-  path:'newscard', component: NewsCardComponent
+  path:'news-card', component: NewsCardComponent
 }
 ];
 
