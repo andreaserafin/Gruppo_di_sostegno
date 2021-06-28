@@ -1,4 +1,6 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-homepage',
@@ -7,44 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  graph1: any;
-  graph2: any;
-  graph3: any;
-  options: any;
-  value: number = 0;
+  chartsForm: FormGroup;
 
-  constructor() { }
+  chart1Value: number = 97; 
+  chart2Value: number = 100; 
+  chart3Value: number = 95; 
 
-  ngOnInit(): void {
-    this.getChart();
+
+  constructor() {
+    this.chartsForm = new FormGroup({
+      chart1: new FormControl('97'),
+      chart2: new FormControl('100'),
+      chart3: new FormControl('95'),
+    });
   }
 
-  getChart = () => {
-    this.graph1 = {
-      datasets: [
-        {
-          data: [97, 3],
-          backgroundColor: ["#F41D1A", "#FFFFFF"],
-          borderWidth: 0,
-          strokeWidth: 40
-        }
-      ]
-    };
-    this.graph2 = {
-      datasets: [
-        {
-          data: [100],
-          backgroundColor: ["#F41D1A", "#FFFFFF"],
-          borderWidth: 0
-        }]
-    };
-    this.graph3 = {
-      datasets: [
-        {
-          data: [95, 5],
-          backgroundColor: ["#F41D1A", "#FFFFFF"],
-          borderWidth: 0
-        }]
-    };
-  };
-}
+  ngOnInit(): void {
+    
+    this.chartsForm.patchValue({
+      chart1: this.chart1Value,
+      chart2: this.chart2Value,
+      chart3: this.chart3Value,
+    })
+  }
+    
+  }
+

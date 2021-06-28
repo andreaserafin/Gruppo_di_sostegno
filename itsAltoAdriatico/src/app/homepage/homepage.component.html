@@ -10,27 +10,35 @@
                             alle materie e una forte relazione con le aziende facilitando allo studente
                             l’inserimento nel mondo del lavoro.</p>
                     </div>
-                    <div class="row chart-row">
-                        <div class="col-4 chart-column">
-                            <p-knob valueTemplate=50 [readonly]=true [min]="0" [max]="100" rangeColor="#F41D1A"></p-knob>
-                            <div style="text-align: center;">
-                                <p>Tasso di occupazione dei diplomati ITS</p>
+                    <hr>
+                    <form [formGroup]="chartsForm">
+                        <div class="row chart-row">
+                            <div class="col-4 chart-column">
+                                <p-knob formControlName="chart1" valueTemplate={{chart1Value}} [readonly]=true [min]="0" [max]="100"
+                                    valueColor="#F4362F">
+                                </p-knob>
+                                <div style="text-align: center;">
+                                    <p>Tasso di occupazione dei diplomati ITS</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4 chart-column">
-                            <p-knob valueTemplate=50 [readonly]=true [min]="0" [max]="100" rangeColor="#F41D1A"></p-knob>
-                            <div style="text-align: center;">
-                                <p>Tasso di impiego coerente con il percorso di studio</p>
+                            <div class="col-4 chart-column">
+                                <p-knob formControlName="chart2" valueTemplate={{chart2Value}} [readonly]=true [min]="0" [max]="100"
+                                    valueColor="#F4362F"></p-knob>
+                                <div style="text-align: center;">
+                                    <p>Tasso di impiego coerente con il percorso di studio</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4 chart-column">
-                            <p-knob valueTemplate=50 [readonly]=true [min]="0" [max]="100" rangeColor="#F41D1A"></p-knob>
+                            <div class="col-4 chart-column">
+                                <p-knob formControlName="chart3" valueTemplate={{chart3Value}} [readonly]=true [min]="0" [max]="100"
+                                    valueColor="#F4362F">
+                                </p-knob>
 
-                            <div style="text-align: center;">
-                                <p>Docenza proveniente dal mondo imprenditoriale</p>
+                                <div style="text-align: center;">
+                                    <p>Docenza proveniente dal mondo imprenditoriale</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -49,7 +57,7 @@
                                 interessa.
                             </p>
                             <button type="button" class="btn button-fill">
-                                <i class="bi bi-book-fill"></i>
+                                <i class="bi bi-book"></i>
                                 Scopri di più
                             </button>
                         </div>

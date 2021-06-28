@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 import { KnobModule } from 'primeng/knob';
 import { ChartModule } from 'primeng/chart';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChartModule } from 'primeng/chart';
     BrowserModule,
     AppRoutingModule,
     KnobModule,
-    ChartModule
+    ChartModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
