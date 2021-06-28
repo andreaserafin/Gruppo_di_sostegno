@@ -5,7 +5,7 @@ import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'lista-corsi',
     component:  ListaCorsiComponent,
     pathMatch: 'full',
   }
