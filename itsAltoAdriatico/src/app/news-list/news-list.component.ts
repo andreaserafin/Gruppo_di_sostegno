@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class NewsListComponent implements OnInit {
 
   constructor() { }
-
+minnie = [{},{},{},{}]
   ngOnInit(): void {
+  }
+
+  pippo(){
+    console.log("pippo")
   }
 
 }
