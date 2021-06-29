@@ -20,7 +20,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     ListaCorsiComponent,
     CardCorsoComponent,
     ChiSiamoComponent,
-    ContattiComponent
+    ContattiComponent,
     ThumbnailPageComponent,
     AppComponent,
     HomepageComponent

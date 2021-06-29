@@ -9,6 +9,8 @@ import {FormControl, FormGroup} from "@angular/forms";
 })
 export class HomepageComponent implements OnInit {
 
+  modal: boolean = false;
+
   chartsForm: FormGroup;
 
   chart1Value: number = 97; 
@@ -31,6 +33,10 @@ export class HomepageComponent implements OnInit {
       chart2: this.chart2Value,
       chart3: this.chart3Value,
     })
+  }
+
+  openModal = () => {
+    this.modal = true;
   }
     
   }

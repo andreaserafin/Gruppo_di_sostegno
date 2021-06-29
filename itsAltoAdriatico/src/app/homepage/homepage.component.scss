@@ -42,45 +42,24 @@ h1 {
         .card-schoolimage {
             background-color: var(--bs-grey50);
             opacity: 0.95;
-            width: 90%;
-
-            hr {
-                margin-top: 40px;
-                border: 1px black;
-                z-index: 2;
-            }
-
-            .chart-row {
-                margin-top: 30px;
-                h4 {
-                    position: absolute;
-                    font-family: "roboto bold";
-                    color: black;
-                }
-
-                .chart-column {
-                    width: 100px;
-                    p {
-                        color: black;
-                        font-family: "roboto-bold";
-                        margin-top: 10px;
-                    }
-                }
+            width: 80%;
+            border-radius: 0px 10px 10px 0px;
+            margin-bottom: 10%;
+           
+            .chart-row, hr, p {
+                display: none;
             }
         }
     }
-    .card {
-        // margin: 1rem;
+    .card-student, .card-company {
         border-radius: 10px;
-        background-color: var(--bs-grey500);
+        background-color: var(--bs-grey50);
+        width: 50%;
 
-        .image-card-button {
+        .image-card-button, p {
             display: none;
         }
 
-        .body {
-            width: 100%;
-        }
     }
 }
 
@@ -119,6 +98,9 @@ h1 {
                     padding-top: 10px;
                     padding-bottom: 10px;
                 }
+                button {
+                    display: none;
+                }
             }
 
             hr {
@@ -146,12 +128,14 @@ h1 {
             }
         }
     }
+
+    // Card Stud/Az
     .row {
         display: flex;
         align-items: center;
         justify-content: space-around;
 
-        .card {
+        .card-student, .card-company  {
             border-radius: 10px;
             width: 35rem;
             background-color: var(--bs-grey50);

@@ -1,13 +1,16 @@
 <div class="container-imagehome">
     <div class="card card-schoolimage">
         <div class="card-body">
-            <div class="row">
+            <div class="row chi-siamo">
                 <h1 class="card-title">CHI SIAMO...</h1>
                 <p class="card-text">Gli ITS sono scuole di eccellenza ad alta specializzazione tecnologica.
                     Promuovono corsi post diploma di specializzazione tecnica che hanno un approccio pratico
                     alle materie e una forte relazione con le aziende facilitando allo studente
                     l’inserimento nel mondo del lavoro.</p>
             </div>
+            <button type="button" class="btn button-fill btn-chi-siamo" data-toggle="modal" data-target="#exampleModal" (click)="openModal()">
+                Scopri di più
+            </button>
             <hr>
             <form [formGroup]="chartsForm">
                 <div class="row chart-row">
@@ -39,7 +42,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="card">
+        <div class="card card-student">
             <div class="row">
                 <div class="col-lg-4 image-card-button">
                     <img src="../../assets/images/student.jpg" alt="Scuole">
@@ -58,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card card-company">
             <div class="row">
                 <div class="col-lg-4 image-card-button">
                     <img src="../../assets/images/company.jpg" alt="Azienda">
@@ -89,6 +92,26 @@
                     <i class="bi bi-building"></i>
                     Scopri di più
                 </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
