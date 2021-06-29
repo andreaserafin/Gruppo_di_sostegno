@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardCorsoComponent } from './card-corso/card-corso.component';
 import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
 const routes: Routes = [
   {
     path: 'lista-corsi',
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path:"contatti",
     component:ContattiComponent,
+    pathMatch: 'full',
+  },
+  {
+    path:"news/dettagli",
+    component:NewsDetailComponent,
     pathMatch: 'full',
   }
 ];
