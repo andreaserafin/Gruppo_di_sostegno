@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NewsCardComponent } from './news-card/news-card.component';
 import { OpenDayCardComponent } from './open-day-card/open-day-card.component';
+import { PartnerBannerComponent } from './partner-banner/partner-banner.component';
 
 
 const routes: Routes = [{
@@ -9,6 +10,9 @@ const routes: Routes = [{
 },
 {
   path:'news-card', component: NewsCardComponent
+},
+{
+  path:'partner-banner', component: PartnerBannerComponent
 }
 ];
 
