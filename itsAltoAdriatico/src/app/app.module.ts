@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 import { CardCorsoComponent } from './card-corso/card-corso.component';
-import { ThumbnailPageComponent } from './thumbnail-page/thumbnail-page.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
 
@@ -13,7 +12,6 @@ import { ContattiComponent } from './contatti/contatti.component';
     AppComponent,
     ListaCorsiComponent,
     CardCorsoComponent,
-    ThumbnailPageComponent,
     ChiSiamoComponent,
     ContattiComponent
   ],
