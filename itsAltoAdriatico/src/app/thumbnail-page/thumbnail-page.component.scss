@@ -14,7 +14,7 @@
   backdrop-filter: blur(80px);
   color: var(--bs-gray300);
   border-radius: 5px;
-  width: 40%;
+  width: 50%;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -23,6 +23,5 @@
 
 .cardtitle {
   margin: 3%;
-  order: 01;
   font-weight: bold;
 }
