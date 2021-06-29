@@ -1,6 +1,7 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -18,7 +19,7 @@ export class HomepageComponent implements OnInit {
   chart3Value: number = 95; 
 
 
-  constructor() {
+  constructor(public route: Router) {
     this.chartsForm = new FormGroup({
       chart1: new FormControl('97'),
       chart2: new FormControl('100'),

@@ -140,6 +140,9 @@ h1 {
             width: 35rem;
             background-color: var(--bs-grey50);
             margin-bottom: 5%;
+            border-top:    4px solid var(--bs-grey50);
+            border-left:  4px solid var(--bs-grey50);
+            border-bottom: 4px solid var(--bs-grey50);
 
             .image-card-button {
                 padding: 0%;
