@@ -10,7 +10,8 @@
     .blurred-background-title {
     text-align: center;
     word-wrap: break-word;
-    background: var(gray200);
+    //background: var(gray200);
+    background: rgba(white, 0.5);
     backdrop-filter: blur(30px);
     color: var(gray900);
     padding: 2%;

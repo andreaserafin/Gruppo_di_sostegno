@@ -37,10 +37,21 @@ export class DettaglioCorsoComponent implements OnInit {
     return parte===this.activetabnumber ? "bordi-alti" : "bordi";
   }
 
+  public editIcon(parte: number) {
+    //let pippo: any = document.getElementById(parte)
+    //let n = 0;
+    this.n = this.activetabnumber;  
+    return parte===this.activetabnumber ? "bi bi-caret-up" : "bi bi-caret-down";
+  }
+
   public noActiveTab() {
     if (this.activetabnumber === this.n) {
       this.activetabnumber = 0;
     }
   }
+
+  /* public aCapo () {
+    return window.screen.width < 750 ? "a-capo" : "";
+  } */
 
 }
