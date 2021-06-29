@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CardCorsoComponent } from '../card-corso/card-corso.component';
-import { ThumbnailPageComponent } from '../thumbnail-page/thumbnail-page.component';
 
 @Component({
   selector: 'app-lista-corsi',
