@@ -10,115 +10,192 @@ h1 {
     border: none;
 }
 
-.container-imagehome {
-    overflow-x: hidden;
-    background-image: url(../../assets/images/itsKennedy2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-
-    &::before {
-        background: rgb(222, 222, 222);
-        width: 100%;
-        height: 15vh;
-        display: block;
-        content: "";
-        background: linear-gradient(
-            0deg,
-            rgba(222, 222, 222, 0) 0%,
-            rgba(248, 248, 248, 0.589) 65%,
-            rgba(255, 255, 255, 1) 100%
-        );
+.card-body {
+    text-align: center;
+    .card-title {
+        font-family: "roboto-bold";
     }
+}
 
-    // &::after {
-    //     top: auto;
-    //     bottom: 0;
-    //     z-index: 0;
-    //     background: linear-gradient(
-    //         180deg,
-    //         rgba(222, 222, 222, 0) 0%,
-    //         rgba(248, 248, 248, 0.589) 65%,
-    //         rgba(255, 255, 255, 1) 100%
-    //     );
-    // }
+@media screen and (max-width: 600px) {
+    .container-imagehome {
+        overflow-x: hidden;
+        background-image: url(../../assets/images/itsKennedy2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
 
-    .card-schoolimage {
-        border-radius: 0px 10px 10px 0px;
-        margin-bottom: 80px;
-        background-color: var(--bs-grey50);
-        opacity: 0.95;
+        &::before {
+            background: rgb(222, 222, 222);
+            width: 100%;
+            height: 15vh;
+            display: block;
+            content: "";
+            background: linear-gradient(
+                0deg,
+                rgba(222, 222, 222, 0) 0%,
+                rgba(248, 248, 248, 0.589) 65%,
+                rgba(255, 255, 255, 1) 100%
+            );
+        }
 
-        .card-body {
-            padding: 30px;
-            .card-title {
-                padding-top: 10px;
-                padding-bottom: 10px;
+        .card-schoolimage {
+            background-color: var(--bs-grey50);
+            opacity: 0.95;
+            width: 90%;
+
+            hr {
+                margin-top: 40px;
+                border: 1px black;
+                z-index: 2;
+            }
+
+            .chart-row {
+                margin-top: 30px;
+                h4 {
+                    position: absolute;
+                    font-family: "roboto bold";
+                    color: black;
+                }
+
+                .chart-column {
+                    width: 100px;
+                    p {
+                        color: black;
+                        font-family: "roboto-bold";
+                        margin-top: 10px;
+                    }
+                }
             }
         }
-        
-        hr {
-            margin-top: 40px;
-            border: 1px  black;
-            z-index: 2;
+    }
+    .card {
+        // margin: 1rem;
+        border-radius: 10px;
+        background-color: var(--bs-grey500);
+
+        .image-card-button {
+            display: none;
         }
-        .chart-row {
-            margin-top: 30px;
-            h4 {
-                position: absolute;
-                font-family: "roboto bold";
-                color: black;
+
+        .body {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-imagehome {
+        overflow-x: hidden;
+        background-image: url(../../assets/images/itsKennedy2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+
+        &::before {
+            background: rgb(222, 222, 222);
+            width: 100%;
+            height: 15vh;
+            display: block;
+            content: "";
+            background: linear-gradient(
+                0deg,
+                rgba(222, 222, 222, 0) 0%,
+                rgba(248, 248, 248, 0.589) 65%,
+                rgba(255, 255, 255, 1) 100%
+            );
+        }
+
+        .card-schoolimage {
+            border-radius: 0px 10px 10px 0px;
+            margin-bottom: 80px;
+            background-color: var(--bs-grey50);
+            opacity: 0.95;
+            width: 50%;
+
+            .card-body {
+                padding: 30px;
+                .card-title {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            hr {
+                margin-top: 40px;
+                border: 1px black;
+                z-index: 2;
+            }
+
+            .chart-row {
+                margin-top: 30px;
+                h4 {
+                    position: absolute;
+                    font-family: "roboto bold";
+                    color: black;
+                }
+
+                .chart-column {
+                    text-align: center;
+                    p {
+                        color: black;
+                        font-family: "roboto-bold";
+                        margin-top: 20px;
+                    }
+                }
             }
         }
-        .chart-column {
-            
-            text-align: center;
-            p {
-                color: black;
-                font-family: "roboto-bold";
-                margin-top: 20px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .card {
+            border-radius: 10px;
+            width: 35rem;
+            background-color: var(--bs-grey50);
+            margin-bottom: 5%;
+
+            .image-card-button {
+                padding: 0%;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px 0px 0px 10px;
+                }
+
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    background: linear-gradient(
+                        90deg,
+                        rgba(250, 250, 250, 0) 74%,
+                        rgba(250, 250, 250, 0.922864214044993) 86%,
+                        rgba(250, 250, 250, 1) 100%
+                    );
+                }
             }
         }
     }
 }
 
-.card-button-row {
-    margin-bottom: 3rem;
-    padding: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    .column-card-button {
-        padding: 0%;
-    }
-    .card-button {
-        width: 35rem;
-        border-radius: 10px;
-        background-color: var(--bs-grey50);
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
 
-        .image-card-button {
-            position: relative;
-            img {
-                width: 100%;
-                height: 100%;
-                padding: 5px;
-                border-radius: 10px;
-            }
+    .company-form {
+        width: 100%;
 
-            &::before {
-                width: 100%;
-                height: 100%;
-                display: block;
-                content: "";
-                position: absolute;
-                background: linear-gradient(90deg, rgba(250,250,250,0) 74%, rgba(250,250,250,0.922864214044993) 86%, rgba(250,250,250,1) 100%);
-            }
-        }
-        .card-body {
-            text-align: center;
-            .card-title {
-                font-family: "roboto-bold";
-            }
+        .classe_personalizzata_con_immagine_di_bg {
+            background-image: url("../../assets/images/meeting.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
