@@ -1,0 +1,28 @@
+.card-corso {
+  background-image: url("../../assets/img/corsi.png");
+  height: 365px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.title-container {
+  background: var(gray200);
+  backdrop-filter: blur(80px);
+  color: var(--bs-gray300);
+  border-radius: 5px;
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardtitle {
+  margin: 3%;
+  order: 01;
+  font-weight: bold;
+}
