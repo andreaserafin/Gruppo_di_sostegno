@@ -37,7 +37,9 @@
               "src/styles.scss",
               "src/scss_variables/font-faces.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {

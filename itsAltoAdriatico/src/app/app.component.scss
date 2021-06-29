@@ -1,8 +1,10 @@
 nav{
     .navbar-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+    
+    
 
     a{
         text-transform: uppercase;
@@ -49,8 +51,35 @@ footer{
         }
     }
 }
+@media screen and (max-width: 1152px) {
+
+ 
+
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+        .burgermenu-row-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .navbar-container{
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        a{
+            text-transform: uppercase;
+        }
+        .logo-navbar{
+            width: 15rem;
+            margin: 0.5rem;
+        }
+    }    
+}
 
 @media screen and (max-width: 780px) {
+
+
     footer{
         .container-div-footer{
     
