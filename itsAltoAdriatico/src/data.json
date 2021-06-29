@@ -1,0 +1,73 @@
+{
+    "data": [
+        {
+            "antemprima_corsi": [
+                {
+                    "nome": "Front end & UX Developer",
+                    "descrizione": "Interpreta e codifica i requisiti utente e di usabilità (definiti dal Designer) rendendoli compatibili con quelli dell’applicazione…"
+                },
+                {
+                    "nome": "Sviluppatore per la fabbrica intelligente",
+                    "descrizione": "Realizza sistemi di Industrial Internet of Things per la programmazione, il controllo e la manutenzione preventiva di macchine e impianti industriali…"
+                },
+                {
+                    "nome": "Mobile developer",
+                    "descrizione": "Realizza applicazioni su sistemi mobile in ambienti Android, iOS ed ibridi, curando l’interfaccia utente, l’integrazione con servizi web e cloud…"
+                },
+                {
+                    "nome": "Cloud & back end developer",
+                    "descrizione": "Realizza e implementa applicazioni aziendali per il cloud, contribuendo alla pianificazione ed al disegno di dettaglio…"
+                },
+                {
+                    "nome": "User Experience Designer",
+                    "descrizione": "Il corso prepara alla professione di User Experience Designer, la figura che ottimizza la navigazione di app, siti e portali web rendendoli user-friendly…"
+                },
+                {
+                    "nome": "Industrial IOT Developer",
+                    "descrizione": "Il corso prepara alla professione di Industrial IoT Developer, la figura che realizza applicazioni per la gestione…"
+                }
+            ],
+            "antemprima_news": [
+                {
+                    "titolo": "Nuove tecnologie",
+                    "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit."
+                },
+                {
+                    "titolo": "Nuovi corsi",
+                    "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit."
+                },
+                {
+                    "titolo": "Cambio nome e dirigenza",
+                    "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit."
+                },
+                {
+                    "titolo": "Colpo di scena",
+                    "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit."
+                }
+            ],
+            "antemprima_openday": [
+                {
+                    "luogo": "Università di Pordenone",
+                    "numero": "02",
+                    "mese": "Agosto",
+                    "ora": "10:30",
+                    "giorno": "lun"
+                },
+                {
+                    "luogo": "Università di Trieste",
+                    "numero": "11",
+                    "mese": "Settembre",
+                    "ora": "10:30",
+                    "giorno": "mar"
+                },
+                {
+                    "luogo": "Università di Udine",
+                    "numero": "13",
+                    "mese": "Settembre",
+                    "ora": "15:00",
+                    "giorno": "gio"
+                }
+            ]
+        }
+    ]
+}
