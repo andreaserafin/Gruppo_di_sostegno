@@ -5,10 +5,9 @@
   background-size: cover;
 }
 
-.sub-course {
+.sub-openday {
   overflow-x: hidden;
 }
-
 
 .form-row {
   margin-left: 3rem;
@@ -37,6 +36,7 @@
 input, select {
   background-color: #4287f505;
 }
+
 
 h1 {
   color: var(--bs-gray900);
@@ -80,8 +80,8 @@ h3 {
 }
 
 .head {
-    margin-top: 2rem;
-    margin-left: 3rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
 }
 
 .details {

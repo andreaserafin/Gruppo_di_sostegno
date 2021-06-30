@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SubscriptionCourseForm } from '../models/SubcriptionCourseForm';
+import { Router } from '@angular/router';
+import { SubscriptionCourseForm } from '../models/SubscriptionCourseForm';
 
 @Component({
   selector: 'app-subscription-course',
@@ -8,21 +9,28 @@ import { SubscriptionCourseForm } from '../models/SubcriptionCourseForm';
 })
 export class SubscriptionCourseComponent implements OnInit {
 
-  subForm = new SubscriptionCourseForm();
+  subCourseForm = new SubscriptionCourseForm();
 
-  constructor() { }
+  listOptions = [
+    { id: 0, name: "Carta d'Identità" },
+    { id: 1, name: "Passaporto" },
+    { id: 2, name: "Patente di guida" },
+  ];
 
-  validate() {
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+  }
+
+  validateSubCourse() {
     var form = document.getElementsByClassName('needs-validation')[0] as HTMLFormElement;
     if (form.checkValidity() === false) {
       event?.preventDefault();
       event?.stopPropagation();
+    } else {
+      this.router.navigate(['/']);
+      console.log(this.subCourseForm);
     }
     form.classList.add('was-validated');
   }
-
-  ngOnInit(): void {
-    
-  }
-
 }

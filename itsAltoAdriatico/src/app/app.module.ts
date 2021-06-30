@@ -7,11 +7,13 @@ import { CalendarModule } from 'primeng/calendar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SubscriptionCourseComponent } from './subscription-course/subscription-course.component';
+import { SubscriptionOpendayComponent } from './subscription-openday/subscription-openday.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SubscriptionCourseComponent
+    SubscriptionCourseComponent,
+    SubscriptionOpendayComponent
   ],
   imports: [
     BrowserModule,

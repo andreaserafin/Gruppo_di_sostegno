@@ -1,7 +1,7 @@
-<div class="sub-course">
+<div class="sub-open day">
   <div class="background-image-heading background-image">
     <div class="blurred-background-title">
-      <h1>ISCRIZIONE SELEZIONI FRONT END & USER DEVELOPER</h1>
+      <h1>ISCRIZIONE OPEN DAY</h1>
     </div>
   </div>
 
@@ -29,28 +29,18 @@
           </div>
           <div class="card-body">
             <div class="row title">
-              <h4 style="width:auto">Durata:</h4>
-              <label style="width: auto; padding-top: 6px">2 anni</label>
+              <h4 style="width:auto">Informazioni:</h4>
+              <label style="width: auto; padding-top: 6px">Lorem ispum</label>
             </div>
 
             <div class="row title">
-              <h4 style="width:auto">Partenza corso:</h4>
-              <label style="width: auto; padding-top: 6px">Ottobre 2020</label>
+              <h4 style="width:auto">Data:</h4>
+              <label style="width: auto; padding-top: 6px">14-15-16 Gennaio 2021</label>
             </div>
 
             <div class="row title">
-              <h4 style="width:auto">Esami finali:</h4>
-              <label style="width: auto; padding-top: 6px">Luglio 2022</label>
-            </div>
-
-            <div class="row title">
-              <h4 style="width:auto">Formazione in aula:</h4>
-              <label style="width: auto; padding-top: 6px">680 ore (primo anno) / 504 ore (secondo anno)</label>
-            </div>
-
-            <div class="row title">
-              <h4 style="width:auto">Stage in azienda:</h4>
-              <label style="width: auto; padding-top: 6px">320 ore (giugno-luglio 2021) 480 ore (febbraio-aprile 2022)</label>
+              <h4 style="width:auto">Orario:</h4>
+              <label style="width: auto; padding-top: 6px">Dalle 9:00 alle 18:00</label>
             </div>
           </div>
         </div>
@@ -87,7 +77,7 @@
                      placeholder=" "
                      name="name"
                      #name="ngModel"
-                     [(ngModel)]="subCourseForm.name"
+                     [(ngModel)]="subOpenDayForm.name"
                      required>
               <label for="name">Nome *</label>
               <div class="invalid-feedback">Nome obbligatorio.</div>
@@ -100,7 +90,7 @@
                      placeholder=" "
                      name="surname"
                      #surname="ngModel"
-                     [(ngModel)]="subCourseForm.surname"
+                     [(ngModel)]="subOpenDayForm.surname"
                      required>
               <label for="surname">Cognome *</label>
               <div class="invalid-feedback">Cognome obbligatorio.</div>
@@ -115,7 +105,7 @@
                      placeholder=" "
                      name="birthday"
                      #birthday="ngModel"
-                     [(ngModel)]="subCourseForm.birthday"
+                     [(ngModel)]="subOpenDayForm.birthday"
                      required>
               <label for="navigators">Data di nascita *</label>
               <div class="invalid-feedback">Data di nascita obbligatoria.</div>
@@ -128,7 +118,7 @@
                      placeholder=" "
                      name="birthplace"
                      #birthplace="ngModel"
-                     [(ngModel)]="subCourseForm.birthplace"
+                     [(ngModel)]="subOpenDayForm.birthplace"
                      required>
               <label for="birthplace">Luogo di nascita *</label>
               <div class="invalid-feedback">Luogo di nascita obbligatorio.</div>
@@ -141,7 +131,7 @@
                      placeholder=" "
                      name="code"
                      #code="ngModel"
-                     [(ngModel)]="subCourseForm.code"
+                     [(ngModel)]="subOpenDayForm.code"
                      required
                      minlength="16"
                      maxlength="16">
@@ -158,7 +148,7 @@
                      placeholder=" "
                      name="city"
                      #city="ngModel"
-                     [(ngModel)]="subCourseForm.city"
+                     [(ngModel)]="subOpenDayForm.city"
                      required>
               <label for="city">Città di residenza *</label>
               <div class="invalid-feedback">Città obbligatoria.</div>
@@ -171,8 +161,7 @@
                      placeholder=" "
                      name="address"
                      #address="ngModel"
-                     [(ngModel)]="subCourseForm.address"
-                     min="0"
+                     [(ngModel)]="subOpenDayForm.address"
                      required>
               <label for="address">Via *</label>
               <div class="invalid-feedback">Indirizzo obbligatorio.</div>
@@ -181,71 +170,15 @@
             <div class="form-floating pr-0 mb-3 col-md-2">
               <input type="text"
                      class="form-control"
-                     id="houseNum"
+                     id="num"
                      placeholder=" "
-                     name="houseNum"
+                     name="num"
                      #houseNum="ngModel"
-                     [(ngModel)]="subCourseForm.houseNum"
+                     [(ngModel)]="subOpenDayForm.houseNum"
+                     min="0"
                      required>
               <label for="num">N° *</label>
               <div class="invalid-feedback">Numero civico obbligatorio.</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="form card round mb-3">
-          <h3 class="head">Dati documento di riconoscimento</h3>
-          <div class="form-row">
-            <div class="form-floating pl-0 mb-3 col-md-3">
-              <select class="form-select"
-                      id="documentType"
-                      name="documentType"
-                      #documentType="ngModel"
-                      [(ngModel)]="subCourseForm.documentType"
-                      required>
-                <option *ngFor="let opts of listOptions" [ngValue]="opts.name">{{opts.name}}</option>
-              </select>
-              <label for="documentType">Tipo di documento *</label>
-              <div class="invalid-feedback">Tipo di documento obbligatorio.</div>
-            </div>
-
-            <div class="form-floating mb-3 col-md-3">
-              <input type="text"
-                     class="form-control"
-                     id="documentNumber"
-                     placeholder=" "
-                     name="documentNumber"
-                     #documentNumber="ngModel"
-                     [(ngModel)]="subCourseForm.documentNumber"
-                     required>
-              <label for="documentNumber">Numero documento *</label>
-              <div class="invalid-feedback">Numero di documento obbligatorio.</div>
-            </div>
-
-            <div class="form-floating mb-3 col-md-3">
-              <input type="text"
-                     class="form-control"
-                     id="documentReleasedBy"
-                     placeholder=" "
-                     name="documentReleasedBy"
-                     #documentReleasedBy="ngModel"
-                     [(ngModel)]="subCourseForm.documentReleasedBy"
-                     required>
-              <label for="documentReleasedBy">Rilasciato da *</label>
-              <div class="invalid-feedback">Documento rilasciato da obbligatorio.</div>
-            </div>
-
-            <div class="form-floating pr-0 mb-3 col-md-3">
-              <input type="date"
-                     class="form-control"
-                     id="documentExpiryDate"
-                     placeholder=" "
-                     name="documentExpiryDate"
-                     #documentExpiryDate="ngModel"
-                     [(ngModel)]="subCourseForm.documentExpiryDate"
-                     required>
-              <label for="navigators">Data di scadenza *</label>
-              <div class="invalid-feedback">Data di scadenza documento obbligatorio.</div>
             </div>
           </div>
         </div>
@@ -260,7 +193,7 @@
                      placeholder=" "
                      name="email"
                      #email="ngModel"
-                     [(ngModel)]="subCourseForm.email"
+                     [(ngModel)]="subOpenDayForm.email"
                      required>
               <label for="email">Email *</label>
               <div class="invalid-feedback">Email obbligatoria.</div>
@@ -273,7 +206,7 @@
                      placeholder=" "
                      name="phone"
                      #phone="ngModel"
-                     [(ngModel)]="subCourseForm.phone">
+                     [(ngModel)]="subOpenDayForm.phone">
               <label for="phone">Cellulare</label>
             </div>
           </div>
@@ -282,14 +215,14 @@
         <div class="form card round mb-3">
           <h3 class="head">Scuola di provenienza</h3>
           <div class="form-row">
-            <div class="form-floating pl-0 mb-3 col-md-6">
+            <div class="form-floating mb-3 col-md-6">
               <input type="text"
                      class="form-control"
                      id="school"
-                     placeholder=" "
+                     placeholder="Scuola"
                      name="school"
                      #school="ngModel"
-                     [(ngModel)]="subCourseForm.school"
+                     [(ngModel)]="subOpenDayForm.school"
                      required>
               <label for="school">Istituto di provenienza *</label>
               <div class="invalid-feedback">Istituto di provenienza obbligatorio.</div>
@@ -302,7 +235,7 @@
                      placeholder=" "
                      name="graduateYear"
                      #graduateYear="ngModel"
-                     [(ngModel)]="subCourseForm.graduateYear"
+                     [(ngModel)]="subOpenDayForm.graduateYear"
                      min="1900">
               <label for="year">Anno diplomato/a </label>
             </div>
@@ -314,25 +247,10 @@
                      placeholder=" "
                      name="diplomaVote"
                      #diplomaVote="ngModel"
-                     [(ngModel)]="subCourseForm.diplomaVote"
+                     [(ngModel)]="subOpenDayForm.diplomaVote"
                      min="0"
                      max="100">
               <label for="vote">Voto diploma </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form card round mb-3">
-          <h3 class="head">Come ci hai conosciuti?</h3>
-          <div class="textArea">
-            <div class="form-group">
-              <textarea class="form-control"
-                        id="textarea"
-                        name="textarea"
-                        #textArea="ngModel"
-                        [(ngModel)]="subCourseForm.textarea"
-                        rows="3"
-                        style="width:100%"></textarea>
             </div>
           </div>
         </div>
@@ -344,10 +262,10 @@
               <input class="form-check-input"
                      type="checkbox"
                      value=""
-                     id="privacy"
+                     id="flexCheckDefault"
                      name="privacy"
                      #privacy="ngModel"
-                     [(ngModel)]="subCourseForm.privacy"
+                     [(ngModel)]="subOpenDayForm.privacy"
                      required>
               <label class="form-check-label" for="flexCheckDefault">
                 Autorizzazione trattamento dati personali GDPR 2016/679 *
@@ -385,7 +303,7 @@
         </div>
 
         <div class="button d-flex flex-row-reverse">
-          <button type="button" (click)="validateSubCourse()" class="submit btn btn-primary-700">Submit</button>
+          <button type="button" (click)="validateSubOpenDay()" class="submit btn btn-primary-700">Submit</button>
         </div>
 
       </div>
