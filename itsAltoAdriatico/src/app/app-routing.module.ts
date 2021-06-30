@@ -5,6 +5,7 @@ import { CardCorsoComponent } from './card-corso/card-corso.component';
 import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { NewsListComponent } from './news-list/news-list.component';
 const routes: Routes = [
   {
     path: 'lista-corsi',
@@ -24,8 +25,15 @@ const routes: Routes = [
     path:"news/dettagli",
     component:NewsDetailComponent,
     pathMatch: 'full',
+  },
+  {
+    path:"news",
+    component:NewsListComponent,
+    pathMatch: 'full',
   }
 ];
+
+    
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

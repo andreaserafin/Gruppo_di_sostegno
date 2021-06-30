@@ -7,6 +7,7 @@ import { CardCorsoComponent } from './card-corso/card-corso.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewsListComponent } from './news-list/news-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListaCorsiComponent,
     CardCorsoComponent,
     ChiSiamoComponent,
-    ContattiComponent
+    ContattiComponent,
+    NewsListComponent
   ],
   imports: [
     BrowserModule,
