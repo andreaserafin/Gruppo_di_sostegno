@@ -28,7 +28,7 @@
       </div>
     <div class="searchBar">
       <input type="text" placeholder="Cosa stai cercando...">
-      <i id="iconaSearch" class="bi bi-search" (click)="pippo()"></i>
+      <i id="iconaSearch" class="bi bi-search" ></i>
     </div>
     <div class="filter">
       <p>Ordina A-Z</p>
@@ -63,7 +63,7 @@
         <h2 class="h2bold">Nuovo corso incredibbile!</h2>
         <h4>C'è un nuovo corso incredibbile all'ITS non puoi mancarlo, puoi trovare tutto quello che vuoi, dai dolci alle torte salate, ciao e grazie per il tuo contributo.
         </h4>
-        <button type="button" class="btn detailButton">
+        <button type="button" class="btn detailButton" (click)="route.navigateByUrl('news/dettagli')">
           Scopri di più <i class="bi bi-arrow-right"></i>
         </button>
     </div>
