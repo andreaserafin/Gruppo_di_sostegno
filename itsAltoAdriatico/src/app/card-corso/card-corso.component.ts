@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CoursePreview } from '../models/data-model';
+import { ProxyApiService } from '../Services/proxy-api.service';
 
 @Component({
   selector: 'app-card-corso',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardCorsoComponent implements OnInit {
 
-  constructor() { }
+  coursePreview: CoursePreview[] | undefined;
+
+  constructor(private proxyApi: ProxyApiService) { 
+  }
 
   ngOnInit(): void {
+    this.proxyApi.getCoursePreview().subscribe((resp: CoursePreview[])=>{
+      this.coursePreview = [...resp];
+    });
   }
 
 }
