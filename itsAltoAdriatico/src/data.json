@@ -4,11 +4,13 @@
             "antemprima_corsi": [
                 {
                     "nome": "Front end & UX Developer",
-                    "descrizione": "Interpreta e codifica i requisiti utente e di usabilità (definiti dal Designer) rendendoli compatibili con quelli dell’applicazione…"
+                    "descrizione": "Interpreta e codifica i requisiti utente e di usabilità (definiti dal Designer) rendendoli compatibili con quelli dell’applicazione…",
+                    "src": "../../assets/json-images/banner-corso-generico.jpg"
                 },
                 {
                     "nome": "Sviluppatore per la fabbrica intelligente",
-                    "descrizione": "Realizza sistemi di Industrial Internet of Things per la programmazione, il controllo e la manutenzione preventiva di macchine e impianti industriali…"
+                    "descrizione": "Realizza sistemi di Industrial Internet of Things per la programmazione, il controllo e la manutenzione preventiva di macchine e impianti industriali…",
+                    "src": "../../assets/json-images/fabbrica-intelligente.jpg"
                 },
                 {
                     "nome": "Mobile developer",
