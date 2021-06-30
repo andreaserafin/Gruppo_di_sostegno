@@ -1,0 +1,121 @@
+.news_details{
+    &_wallpaper{
+        background-image: url('../../assets/images/newsDetailWallpaper.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &_breadcrumb {
+        .treck_container_home {
+            margin-top: 20px;
+            width: auto;
+            height: 34px;
+            border-radius: 10px;
+            background-color: var(--bs-primary50);
+            color: var(--bs-primary900);
+            margin-left: 2rem;
+        }
+        
+
+        .treck_container {
+            margin-top: 20px;
+            width: auto;
+            height: 34px;
+            border-radius: 10px;
+            background-color: var(--bs-primary50);
+            color: var(--bs-primary900);
+        }
+        
+        .treck-text {
+            padding: 4px;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .treck {
+            margin-top: 25px;
+            color: var(--bs-primary900);
+        }
+    }
+
+    &_text {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 60%;
+        .h3_bold {
+            font-weight: bold;
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    &_box {
+        margin-top: 47px;
+        border-radius: 10px;
+        width: 30%;
+        height:fit-content;
+        min-width: 500px;
+
+        &_header {
+            display: flex;
+            height: 60px; 
+            align-items: center;
+            justify-content: center; 
+            background-color: var(--bs-primary600); 
+            border-radius: 10px 10px 0 0;
+            color: var(--bs-grey50);
+
+            h2 {
+                margin-bottom: 0px;
+                font-weight: bold;
+            }
+        }
+
+        &_news1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 120px;
+            background-color: var(--bs-grey50);
+
+            &_divlogo {
+                background-color: black;
+                border-radius: 10px;
+                width: 120px;
+                height: 85px;
+                text-align: center;
+
+                &_img {
+                    border-radius: 10px;
+                    height: 85px;
+                }
+            }
+
+            &_divtext {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+    }
+}
+   
+@media screen and (max-width: 700px){ 
+    .news_details_text {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}
+
+
