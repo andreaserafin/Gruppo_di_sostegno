@@ -10,6 +10,13 @@ import { CardCorsoComponent } from './card-corso/card-corso.component';
 import { ThumbnailPageComponent } from './thumbnail-page/thumbnail-page.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsListComponent } from './news-list/news-list.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalendarModule } from 'primeng/calendar';
+import { SubscriptionCourseComponent } from './subscription-course/subscription-course.component';
+import { SubscriptionOpendayComponent } from './subscription-openday/subscription-openday.component';
 
 import { HomepageComponent } from './homepage/homepage.component';
 
@@ -20,15 +27,16 @@ import { CorsiHomeComponent } from './corsi-home/corsi-home.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     ListaCorsiComponent,
     CardCorsoComponent,
     ChiSiamoComponent,
     ContattiComponent,
+    NewsListComponent,
+    SubscriptionCourseComponent,
+    SubscriptionOpendayComponent,
     ThumbnailPageComponent,
     AppComponent,
     HomepageComponent,
-    AppComponent,
     NewsCardComponent,
     OpenDayCardComponent,
     PartnerBannerComponent,
@@ -36,10 +44,16 @@ import { CorsiHomeComponent } from './corsi-home/corsi-home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     KnobModule,
     ChartModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    CalendarModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

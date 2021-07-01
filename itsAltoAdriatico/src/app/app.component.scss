@@ -49,6 +49,23 @@ footer{
         }
     }
 }
+@media screen and (max-width: 1152px) {
+
+ 
+
+    nav{
+        display: flex;
+        flex-direction: row-reverse;
+        .burgermenu-row-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .logo-navbar{
+            width: 13rem;
+            margin: 0.5rem;
+        }
+    }
+}
 
 @media screen and (max-width: 780px) {
     footer{

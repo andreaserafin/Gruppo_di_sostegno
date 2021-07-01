@@ -9,7 +9,14 @@ import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { NewsListComponent } from './news-list/news-list.component';
+import { SubscriptionCourseComponent } from './subscription-course/subscription-course.component';
+import { SubscriptionOpendayComponent } from './subscription-openday/subscription-openday.component';
 const routes: Routes = [
+    {
+        path: '', component: HomepageComponent
+    },
   {
     path: 'lista-corsi',
     component:  ListaCorsiComponent,
@@ -23,8 +30,27 @@ const routes: Routes = [
     path:"contatti",
     component:ContattiComponent,
     pathMatch: 'full',
-    },
-    { path: '', component: HomepageComponent }
+  },
+  {
+    path:"news/dettagli",
+    component:NewsDetailComponent,
+    pathMatch: 'full',
+  },
+  {
+    path:"news",
+    component:NewsListComponent,
+    pathMatch: 'full',
+  },
+  { 
+    path: 'sub-course',
+    component: SubscriptionCourseComponent ,
+    pathMatch: 'full',
+  },
+  { 
+    path: 'sub-openday',
+    component: SubscriptionOpendayComponent,
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
