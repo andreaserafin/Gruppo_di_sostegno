@@ -1,48 +1,38 @@
 <div class="container-imagehome">
-    <div class="card card-schoolimage">
-        <div class="card-body">
-            <div class="row chi-siamo">
-                <h1 class="card-title">CHI SIAMO...</h1>
-                <p class="card-text">Gli ITS sono scuole di eccellenza ad alta specializzazione tecnologica.
-                    Promuovono corsi post diploma di specializzazione tecnica che hanno un approccio pratico
-                    alle materie e una forte relazione con le aziende facilitando allo studente
-                    l’inserimento nel mondo del lavoro.</p>
-            </div>
-            <hr>
-            <form [formGroup]="chartsForm">
-                <div class="row chart-row">
-                    <div class="col-lg-4 chart-column">
-                        <p-knob formControlName="chart1" valueTemplate="{{chart1Value}}%" [strokeWidth]="8" [readonly]=true [min]="0"
-                            [max]="100" valueColor="#F4362F" textColor="#F4362F">
-                        </p-knob>
-                        <div style="text-align: center;">
-                            <p>Tasso di occupazione dei diplomati ITS</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 chart-column">
-                        <p-knob formControlName="chart2" valueTemplate="{{chart2Value}}%" [strokeWidth]="8" [readonly]=true [min]="0"
-                            [max]="100" valueColor="#F4362F" textColor="#F4362F"></p-knob>
-                        <div style="text-align: center;">
-                            <p>Tasso di impiego coerente con il percorso di studio</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 chart-column">
-                        <p-knob formControlName="chart3" valueTemplate="{{chart3Value}}%" [strokeWidth]="8" [readonly]=true [min]="0"
-                            [max]="100" valueColor="#F4362F" textColor="#F4362F">
-                        </p-knob>
-                        <div style="text-align: center;">
-                            <p>Docenza proveniente dal mondo imprenditoriale</p>
-                        </div>
+    <div class="chi-siamo">
+        <h1 class="title-light">ITS <span class="title-bold">ALTO ADRIATICO</span> PORDENONE</h1>
+        <p class="card-text">Gli ITS sono scuole di eccellenza ad alta specializzazione tecnologica.
+            Promuovono corsi post diploma di specializzazione tecnica che hanno un approccio pratico
+            alle materie e una forte relazione con le aziende facilitando allo studente
+            l’inserimento nel mondo del lavoro.</p>
+        <form [formGroup]="chartsForm">
+            <div class="row chart-row">
+                <div class="col-lg-4 chart-column">
+                    <h1>{{chart1Value}}%</h1>
+                    <div style="text-align: center;">
+                        <p>Tasso di occupazione dei diplomati ITS</p>
                     </div>
                 </div>
-            </form>
-        </div>
+                <div class="col-lg-4 chart-column">
+                    <h1>{{chart2Value}}%</h1>
+                    <div style="text-align: center;">
+                        <p>Tasso di impiego coerente con il percorso di studio</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 chart-column">
+                    <h1>{{chart3Value}}%</h1>
+                    <div style="text-align: center;">
+                        <p>Docenza proveniente dal mondo imprenditoriale</p>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="row">
         <div class="card card-student">
             <div class="row">
                 <div class="col-lg-4 image-card-button">
-                    <img src="../../assets/images/student.jpg" alt="Scuole">
+                    <img src="../../assets/img-home/student.jpg" alt="Scuole">
                 </div>
                 <div class="body col-lg-8 col-sm-12">
                     <div class="card-body">
@@ -61,7 +51,7 @@
         <div class="card card-company">
             <div class="row">
                 <div class="col-lg-4 image-card-button">
-                    <img src="../../assets/images/company.jpg" alt="Azienda">
+                    <img src="../../assets/img-home/company.jpg" alt="Azienda">
                 </div>
                 <div class="body col-lg-8 col-sm-12">
                     <div class="card-body">
@@ -91,9 +81,7 @@
 <div class="container">
     <app-card-corso></app-card-corso>
 </div>
-<div class="subtitle-gradient" id="company">
-    <h3>AZIENDE PARTNER</h3>
-</div>
+
 <!-- <div class="container">
     <div class="company-form">
         <div class="background-image-heading classe_personalizzata_con_immagine_di_bg">
