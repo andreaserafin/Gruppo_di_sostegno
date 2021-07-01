@@ -1,5 +1,5 @@
 .classe_personalizzata_con_immagine_di_bg{
-  background-image: url(../../assets/img/banner-chisiamo.jpg);
+  background-image: url(../../assets/img-chi_simao-contatti/banner-chisiamo.jpg);
 } 
 
 .treck_container {
@@ -40,9 +40,10 @@
       align-items: center;
 
       .img_offerts {
-        margin-left: 220px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 10px;
-
+        display: block;
       }
 
       .description_txt {
@@ -67,9 +68,10 @@
       align-items: center;
 
       .img_offerts {
-        margin-left: 220px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 10px;
-
+        display: block;
       }
 
       .description_txt {
@@ -106,6 +108,8 @@
   .button_corsi {
     margin-top: 20px;
     margin-bottom: 30px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }

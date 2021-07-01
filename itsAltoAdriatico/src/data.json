@@ -1,0 +1,100 @@
+{
+    "anteprima_corsi": [
+        {
+            "nome": "Front end & UX Developer",
+            "descrizione": "Interpreta e codifica i requisiti utente e di usabilità (definiti dal Designer) rendendoli compatibili con quelli dell’applicazione…",
+            "src": "../../assets/json-images/banner-corso-generico.jpg"
+        },
+        {
+            "nome": "Sviluppatore per la fabbrica intelligente",
+            "descrizione": "Realizza sistemi di Industrial Internet of Things per la programmazione, il controllo e la manutenzione preventiva di macchine e impianti industriali…",
+            "src": "../../assets/json-images/fabbrica-intelligente.jpg"
+        },
+        {
+            "nome": "Mobile developer",
+            "descrizione": "Realizza applicazioni su sistemi mobile in ambienti Android, iOS ed ibridi, curando l’interfaccia utente, l’integrazione con servizi web e cloud…",
+            "src": "../../assets/json-images/mobile-developer.jpeg"
+        },
+        {
+            "nome": "Cloud & back end developer",
+            "descrizione": "Realizza e implementa applicazioni aziendali per il cloud, contribuendo alla pianificazione ed al disegno di dettaglio…",
+            "src": "../../assets/json-images/cloud-developer_blog-scaled.jpeg"
+        },
+        {
+            "nome": "User Experience Designer",
+            "descrizione": "Il corso prepara alla professione di User Experience Designer, la figura che ottimizza la navigazione di app, siti e portali web rendendoli user-friendly…",
+            "src": "../../assets/json-images/diventa-ux-designer.jpg"
+        },
+        {
+            "nome": "Industrial IOT Developer",
+            "descrizione": "Il corso prepara alla professione di Industrial IoT Developer, la figura che realizza applicazioni per la gestione…",
+            "src": "../../assets/json-images/IoT-datenschutz_scaled.jpeg"
+        }
+    ],
+    "anteprima_news": [
+        {
+            "titolo": "Nuove tecnologie",
+            "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit.",
+            "src": "../../assets/json-images/corsi.png"
+        },
+        {
+            "titolo": "Nuovi corsi",
+            "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit.",
+            "src": "../../assets/json-images/corsi.png"
+        },
+        {
+            "titolo": "Cambio nome e dirigenza",
+            "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit."
+            
+        },
+        {
+            "titolo": "Colpo di scena",
+            "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit.",
+            "src": "../../assets/json-images/teatro-palcoscenico-sipario.jpg"
+        }
+    ],
+    "anteprima_openday": [
+        {
+            "luogo": "Università di Pordenone",
+            "numero": "02",
+            "mese": "Agosto",
+            "ora": "10:30",
+            "giorno": "lun"
+        },
+        {
+            "luogo": "Università di Trieste",
+            "numero": "11",
+            "mese": "Settembre",
+            "ora": "10:30",
+            "giorno": "mar"
+        },
+        {
+            "luogo": "Università di Udine",
+            "numero": "13",
+            "mese": "Settembre",
+            "ora": "15:00",
+            "giorno": "gio"
+        }
+    ],
+    "dettaglio_news": [
+        {
+            "titolo": "Colpo di scena",
+            "sottotitolo1": "Sorpresa incredibile, questa pagina funziona.",
+            "sottotitolo2": "Attenzione ma sono proprio stati loro?",
+            "sottotitolo3": "consectetur adipiscing elit",
+            "sottotitolo4": "Lorem ipsum dolor sit amet",
+            "paragrafo1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non sem est. Proin sed mauris ut eros pharetra convallis non quis metus. In lacinia massa neque, posuere finibus sem sagittis sed. Fusce ac posuere lorem. Nulla facilisi. Donec lectus libero, hendrerit vitae erat et, pellentesque viverra dolor. Aliquam sed egestas metus, non vestibulum justo. Nulla quam ligula, dictum non malesuada eu, luctus nec neque. Nulla eget nibh id ipsum vehicula posuere eget eget erat. Morbi commodo, mauris vitae malesuada pellentesque, neque urna aliquam diam, sit amet auctor elit ligula a lorem. Donec sollicitudin congue ante, ac dictum est commodo sed. Proin et feugiat augue. Nunc non enim lorem.",
+            "paragrafo2": "Aenean commodo, erat quis lacinia dictum, metus elit porttitor mauris, nec scelerisque velit eros eget mi. Quisque elementum elit nisl, sed eleifend arcu egestas quis. Proin egestas metus eu diam scelerisque, sed commodo massa accumsan. Proin nec ipsum eu felis pellentesque pharetra vel vel orci. Aliquam erat volutpat. Vivamus id scelerisque orci, in efficitur nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed condimentum aliquet eros at vulputate.",
+            "paragrafo3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non sem est. Proin sed mauris ut eros pharetra convallis non quis metus. In lacinia massa neque, posuere finibus sem sagittis sed. Fusce ac posuere lorem. Nulla facilisi. Donec lectus libero, hendrerit vitae erat et, pellentesque viverra dolor. Aliquam sed egestas metus, non vestibulum justo. Nulla quam ligula, dictum non malesuada eu, luctus nec neque. Nulla eget nibh id ipsum vehicula posuere eget eget erat. Morbi commodo, mauris vitae malesuada pellentesque, neque urna aliquam diam, sit amet auctor elit ligula a lorem. Donec sollicitudin congue ante, ac dictum est commodo sed. Proin et feugiat augue. Nunc non enim lorem.",
+            "paragrafo4": "Aenean commodo, erat quis lacinia dictum, metus elit porttitor mauris, nec scelerisque velit eros eget mi. Quisque elementum elit nisl, sed eleifend arcu egestas quis. Proin egestas metus eu diam scelerisque, sed commodo massa accumsan. Proin nec ipsum eu felis pellentesque pharetra vel vel orci. Aliquam erat volutpat. Vivamus id scelerisque orci, in efficitur nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed condimentum aliquet eros at vulputate.",
+            "src": "../../assets/json-images/teatro-palcoscenico-sipario.jpg"
+        }
+    ],
+    "dettaglio_corso": [
+        {
+
+        }
+    ]
+        
+    
+}

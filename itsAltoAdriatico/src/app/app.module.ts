@@ -4,22 +4,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 import { CardCorsoComponent } from './card-corso/card-corso.component';
-import { ThumbnailPageComponent } from './thumbnail-page/thumbnail-page.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsListComponent } from './news-list/news-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaCorsiComponent,
     CardCorsoComponent,
-    ThumbnailPageComponent,
     ChiSiamoComponent,
-    ContattiComponent
+    ContattiComponent,
+    NewsListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
