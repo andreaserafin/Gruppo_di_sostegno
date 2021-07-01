@@ -8,6 +8,11 @@ import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsListComponent } from './news-list/news-list.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalendarModule } from 'primeng/calendar';
+import { SubscriptionCourseComponent } from './subscription-course/subscription-course.component';
+import { SubscriptionOpendayComponent } from './subscription-openday/subscription-openday.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,15 @@ import { NewsListComponent } from './news-list/news-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SubscriptionCourseComponent,
+    SubscriptionOpendayComponent,
+    BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    CalendarModule,
+    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

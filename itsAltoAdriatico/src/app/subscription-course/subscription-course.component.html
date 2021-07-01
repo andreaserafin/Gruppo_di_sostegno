@@ -1,0 +1,395 @@
+<div class="sub-course">
+  <div class="background-image-heading background-image">
+    <div class="blurred-background-title">
+      <h1>ISCRIZIONE SELEZIONI FRONT END & USER DEVELOPER</h1>
+    </div>
+  </div>
+
+  <form class="needs-validation">
+    <div class="row background">
+
+      <div class="col-sm-4">
+
+        <div class="details card round mb-3">
+          <div class="card-header">
+            <h3>Modulo d'iscrizione</h3>
+          </div>
+          <div class="card-body">
+            <label class="title" style="margin-left: 1rem; margin-right: 1rem;">
+              Compila il form con i dati del partecipante.
+              I campi contrassegnati con l’asterisco sono
+              obbligatori.
+            </label>
+          </div>
+        </div>
+
+        <div class="details card round mb-3">
+          <div class="card-header">
+            <h3>Descrizione corso</h3>
+          </div>
+          <div class="card-body">
+            <div class="row title">
+              <h4 style="width:auto">Durata:</h4>
+              <label style="width: auto; padding-top: 6px">2 anni</label>
+            </div>
+
+            <div class="row title">
+              <h4 style="width:auto">Partenza corso:</h4>
+              <label style="width: auto; padding-top: 6px">Ottobre 2020</label>
+            </div>
+
+            <div class="row title">
+              <h4 style="width:auto">Esami finali:</h4>
+              <label style="width: auto; padding-top: 6px">Luglio 2022</label>
+            </div>
+
+            <div class="row title">
+              <h4 style="width:auto">Formazione in aula:</h4>
+              <label style="width: auto; padding-top: 6px">680 ore (primo anno) / 504 ore (secondo anno)</label>
+            </div>
+
+            <div class="row title">
+              <h4 style="width:auto">Stage in azienda:</h4>
+              <label style="width: auto; padding-top: 6px">320 ore (giugno-luglio 2021) 480 ore (febbraio-aprile 2022)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="details card round mb-3">
+          <div class="card-header">
+            <h3>Contatti</h3>
+          </div>
+          <div class="card-body">
+            <div class="row title">
+              <h4 style="width:auto">Telefono:</h4>
+              <label style="width: auto; padding-top: 6px">0445 576483</label>
+            </div>
+
+            <div class="row title">
+              <h4 style="width:auto">Email:</h4>
+              <label style="width: auto; padding-top: 6px">thiene@tecnicosuperiorekennedy.it</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-8">
+
+        <div class="form card round mb-3" style="border: none;">
+          <h3 class="head">I tuoi dati anagrafici</h3>
+
+          <div class="form-row">
+            <div class="form-floating pl-0 mb-3 col-md-6">
+              <input type="text"
+                     class="form-control"
+                     id="name"
+                     placeholder=" "
+                     name="name"
+                     #name="ngModel"
+                     [(ngModel)]="subCourseForm.name"
+                     required>
+              <label for="name">Nome *</label>
+              <div class="invalid-feedback">Nome obbligatorio.</div>
+            </div>
+
+            <div class="form-floating pr-0 mb-3 col-md-6">
+              <input type="text"
+                     class="form-control"
+                     id="surname"
+                     placeholder=" "
+                     name="surname"
+                     #surname="ngModel"
+                     [(ngModel)]="subCourseForm.surname"
+                     required>
+              <label for="surname">Cognome *</label>
+              <div class="invalid-feedback">Cognome obbligatorio.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-floating pl-0 mb-3 col-md-3">
+              <input type="date"
+                     class="form-control"
+                     id="birthday"
+                     placeholder=" "
+                     name="birthday"
+                     #birthday="ngModel"
+                     [(ngModel)]="subCourseForm.birthday"
+                     required>
+              <label for="navigators">Data di nascita *</label>
+              <div class="invalid-feedback">Data di nascita obbligatoria.</div>
+            </div>
+
+            <div class="form-floating mb-3 col-md-5">
+              <input type="text"
+                     class="form-control"
+                     id="birthplace"
+                     placeholder=" "
+                     name="birthplace"
+                     #birthplace="ngModel"
+                     [(ngModel)]="subCourseForm.birthplace"
+                     required>
+              <label for="birthplace">Luogo di nascita *</label>
+              <div class="invalid-feedback">Luogo di nascita obbligatorio.</div>
+            </div>
+
+            <div class="form-floating pr-0 mb-3 col-md-4">
+              <input type="text"
+                     class="form-control"
+                     id="code"
+                     placeholder=" "
+                     name="code"
+                     #code="ngModel"
+                     [(ngModel)]="subCourseForm.code"
+                     required
+                     minlength="16"
+                     maxlength="16">
+              <label for="code">Codice fiscale *</label>
+              <div class="invalid-feedback">Codice fiscale obbligatorio e deve contenere 16 caratteri.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-floating pl-0 mb-3 col-md-5">
+              <input type="text"
+                     class="form-control"
+                     id="city"
+                     placeholder=" "
+                     name="city"
+                     #city="ngModel"
+                     [(ngModel)]="subCourseForm.city"
+                     required>
+              <label for="city">Città di residenza *</label>
+              <div class="invalid-feedback">Città obbligatoria.</div>
+            </div>
+
+            <div class="form-floating mb-3 col-md-5">
+              <input type="text"
+                     class="form-control"
+                     id="address"
+                     placeholder=" "
+                     name="address"
+                     #address="ngModel"
+                     [(ngModel)]="subCourseForm.address"
+                     min="0"
+                     required>
+              <label for="address">Via *</label>
+              <div class="invalid-feedback">Indirizzo obbligatorio.</div>
+            </div>
+
+            <div class="form-floating pr-0 mb-3 col-md-2">
+              <input type="text"
+                     class="form-control"
+                     id="houseNum"
+                     placeholder=" "
+                     name="houseNum"
+                     #houseNum="ngModel"
+                     [(ngModel)]="subCourseForm.houseNum"
+                     required>
+              <label for="num">N° *</label>
+              <div class="invalid-feedback">Numero civico obbligatorio.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form card round mb-3">
+          <h3 class="head">Dati documento di riconoscimento</h3>
+          <div class="form-row">
+            <div class="form-floating pl-0 mb-3 col-md-3">
+              <select class="form-select"
+                      id="documentType"
+                      name="documentType"
+                      #documentType="ngModel"
+                      [(ngModel)]="subCourseForm.documentType"
+                      required>
+                <option *ngFor="let opts of listOptions" [ngValue]="opts.name">{{opts.name}}</option>
+              </select>
+              <label for="documentType">Tipo di documento *</label>
+              <div class="invalid-feedback">Tipo di documento obbligatorio.</div>
+            </div>
+
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text"
+                     class="form-control"
+                     id="documentNumber"
+                     placeholder=" "
+                     name="documentNumber"
+                     #documentNumber="ngModel"
+                     [(ngModel)]="subCourseForm.documentNumber"
+                     required>
+              <label for="documentNumber">Numero documento *</label>
+              <div class="invalid-feedback">Numero di documento obbligatorio.</div>
+            </div>
+
+            <div class="form-floating mb-3 col-md-3">
+              <input type="text"
+                     class="form-control"
+                     id="documentReleasedBy"
+                     placeholder=" "
+                     name="documentReleasedBy"
+                     #documentReleasedBy="ngModel"
+                     [(ngModel)]="subCourseForm.documentReleasedBy"
+                     required>
+              <label for="documentReleasedBy">Rilasciato da *</label>
+              <div class="invalid-feedback">Documento rilasciato da obbligatorio.</div>
+            </div>
+
+            <div class="form-floating pr-0 mb-3 col-md-3">
+              <input type="date"
+                     class="form-control"
+                     id="documentExpiryDate"
+                     placeholder=" "
+                     name="documentExpiryDate"
+                     #documentExpiryDate="ngModel"
+                     [(ngModel)]="subCourseForm.documentExpiryDate"
+                     required>
+              <label for="navigators">Data di scadenza *</label>
+              <div class="invalid-feedback">Data di scadenza documento obbligatorio.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form card round mb-3">
+          <h3 class="head">I tuoi contatti</h3>
+          <div class="form-row">
+            <div class="form-floating pl-0 mb-3 col-md-6">
+              <input type="email"
+                     class="form-control"
+                     id="email"
+                     placeholder=" "
+                     name="email"
+                     #email="ngModel"
+                     [(ngModel)]="subCourseForm.email"
+                     required>
+              <label for="email">Email *</label>
+              <div class="invalid-feedback">Email obbligatoria.</div>
+            </div>
+
+            <div class="form-floating pr-0 mb-3 col-md-6">
+              <input type="text"
+                     class="form-control"
+                     id="phone"
+                     placeholder=" "
+                     name="phone"
+                     #phone="ngModel"
+                     [(ngModel)]="subCourseForm.phone">
+              <label for="phone">Cellulare</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form card round mb-3">
+          <h3 class="head">Scuola di provenienza</h3>
+          <div class="form-row">
+            <div class="form-floating pl-0 mb-3 col-md-6">
+              <input type="text"
+                     class="form-control"
+                     id="school"
+                     placeholder=" "
+                     name="school"
+                     #school="ngModel"
+                     [(ngModel)]="subCourseForm.school"
+                     required>
+              <label for="school">Istituto di provenienza *</label>
+              <div class="invalid-feedback">Istituto di provenienza obbligatorio.</div>
+            </div>
+
+            <div class="form-floating mb-3 col-md-3">
+              <input type="number"
+                     class="form-control"
+                     id="graduateYear"
+                     placeholder=" "
+                     name="graduateYear"
+                     #graduateYear="ngModel"
+                     [(ngModel)]="subCourseForm.graduateYear"
+                     min="1900">
+              <label for="year">Anno diplomato/a </label>
+            </div>
+
+            <div class="form-floating pr-0 mb-3 col-md-3">
+              <input type="number"
+                     class="form-control"
+                     id="diplomaVote"
+                     placeholder=" "
+                     name="diplomaVote"
+                     #diplomaVote="ngModel"
+                     [(ngModel)]="subCourseForm.diplomaVote"
+                     min="0"
+                     max="100">
+              <label for="vote">Voto diploma </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form card round mb-3">
+          <h3 class="head">Come ci hai conosciuti?</h3>
+          <div class="textArea">
+            <div class="form-group">
+              <textarea class="form-control"
+                        id="textarea"
+                        name="textarea"
+                        #textArea="ngModel"
+                        [(ngModel)]="subCourseForm.textarea"
+                        rows="3"
+                        style="width:100%"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form card round mb-3">
+          <h3 class="head">Privacy</h3>
+          <div class="form-row">
+            <div class="form-check">
+              <input class="form-check-input"
+                     type="checkbox"
+                     value=""
+                     id="privacy"
+                     name="privacy"
+                     #privacy="ngModel"
+                     [(ngModel)]="subCourseForm.privacy"
+                     required>
+              <label class="form-check-label" for="flexCheckDefault">
+                Autorizzazione trattamento dati personali GDPR 2016/679 *
+              </label>
+              <div class="invalid-feedback">Accetta il trattamento dati personali.</div>
+            </div>
+          </div>
+
+          <div class="form-row yellowed">
+            <div class="allertText">
+              <label>Ti preghiamo di prenderne visione dei requisiti per la partecipazione alle selezioni di ITS Kennedy ICT Pordenone.</label>
+              <ul>
+                <li>
+                  La partecipazione alle selezioni è riservata alle persone in possesso di Diploma di Scuola Superiore, qualunque indirizzo.
+                </li>
+                <li>
+                  I documenti richiesti per finalizzare l’iscrizione sono:
+                </li>
+                <li>
+                  Copia della Carta di Identità e Codice Fiscale in corso di validità
+                </li>
+                <li>
+                  Copia del Diploma di scuola superiore o autodichiarazione di possesso dello stesso
+                </li>
+                <li>
+                  Curriculum Vitae preferibilmente in formato europeo
+                </li>
+                <li>
+                  Eventuali certificazioni di lingua inglese o certificazioni informatiche già in tuo possesso per un valutazione dei titoli
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="button d-flex flex-row-reverse">
+          <button type="button" (click)="validateSubCourse()" class="submit btn btn-primary-700">Submit</button>
+        </div>
+
+      </div>
+
+    </div>
+  </form>
+</div>
