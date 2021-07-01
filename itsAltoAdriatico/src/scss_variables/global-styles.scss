@@ -5,7 +5,10 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
-    width: 100%;  
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    
 
     .blurred-background-title {
       text-align: center;
@@ -16,6 +19,7 @@
       padding: 2rem 6rem;
       height: fit-content;
       margin: 4rem;
+    
     }
 }
 
