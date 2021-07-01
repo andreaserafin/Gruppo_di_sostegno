@@ -20,7 +20,7 @@ h1 {
 @media screen and (max-width: 600px) {
     .container-imagehome {
         overflow-x: hidden;
-        background-image: url(../../assets/img-home/itsKennedy2.jpg);
+        background-image: url(../../assets/images/itsKennedy2.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
@@ -69,7 +69,7 @@ h1 {
 @media screen and (min-width: 992px) {
     .container-imagehome {
         overflow-x: hidden;
-        background-image: url(../../assets/img-home/itsKennedy2.jpg);
+        background-image: url(../../assets/images/itsKennedy2.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
@@ -87,7 +87,7 @@ h1 {
             top: 0;
             text-align: center;
             word-wrap: break-word;
-            background-image: url(../../assets/img-home/backred.png);
+            background-image: url(../../assets/images/backred.png);
             background-repeat: no-repeat;
             background-size: 100% 350px;
             padding: 2rem 6rem;
@@ -190,7 +190,7 @@ h1 {
         width: 100%;
 
         .classe_personalizzata_con_immagine_di_bg {
-            background-image: url("../../assets/img-home/meeting.jpg");
+            background-image: url("../../assets/images/meeting.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
