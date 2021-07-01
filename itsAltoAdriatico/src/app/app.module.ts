@@ -21,14 +21,14 @@ import { SubscriptionOpendayComponent } from './subscription-openday/subscriptio
     CardCorsoComponent,
     ChiSiamoComponent,
     ContattiComponent,
-    NewsListComponent
+    NewsListComponent,
+    SubscriptionCourseComponent,
+    SubscriptionOpendayComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SubscriptionCourseComponent,
-    SubscriptionOpendayComponent,
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
