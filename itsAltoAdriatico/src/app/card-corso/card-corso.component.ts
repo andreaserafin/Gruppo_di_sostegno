@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { CoursePreview } from '../models/data-model';
 import { ProxyApiService } from '../Services/proxy-api.service';
@@ -7,17 +8,18 @@ import { ProxyApiService } from '../Services/proxy-api.service';
   templateUrl: './card-corso.component.html',
   styleUrls: ['./card-corso.component.scss']
 })
-export class CardCorsoComponent implements OnInit {
 
+export class CardCorsoComponent implements OnInit {
+  @Input('ParentToChild') corso!: CoursePreview;
   coursePreview: CoursePreview[] | undefined;
 
   constructor(private proxyApi: ProxyApiService) { 
   }
 
   ngOnInit(): void {
-    this.proxyApi.getCoursePreview().subscribe((resp: CoursePreview[])=>{
-      this.coursePreview = [...resp];
-    });
+  
   }
-
 }
+
+
+

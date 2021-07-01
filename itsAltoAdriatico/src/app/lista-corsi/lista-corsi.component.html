@@ -29,18 +29,7 @@
 <hr />
 
 <div class="lista-container">
-  <app-card-corso class="card-corso"></app-card-corso>
-  <app-card-corso class="card-corso"></app-card-corso>
-  <app-card-corso class="card-corso second-row"></app-card-corso>
-  <app-card-corso class="card-corso second-row"></app-card-corso>
-</div>
-
-<h2 style="margin-top: 4%">CORSI STORICI</h2>
-
-<hr />
-
-<div class="lista-container">
-  <app-card-corso class="card-corso"></app-card-corso>
-  <app-card-corso class="card-corso"></app-card-corso>
-  <app-card-corso class="card-corso second-row"></app-card-corso>
+  <div *ngFor="let item of corsi">
+    <app-card-corso class="card-corso" [ParentToChild]="item"></app-card-corso>
+  </div>
 </div>
