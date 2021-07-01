@@ -1,10 +1,8 @@
-<div class="card-corso">
+<div class="card-corso" [ngStyle]="{'background-image': 'url(' + corso.src + ')', 'background-size': 'cover'  }">
   <div class="card-container">
-    <h3 class="h3bold cardtitle">FEX</h3>
+    <h3 class="h3bold cardtitle">{{corso.nome}}</h3>
     <div class="cardbody">
-      Il corso prepara alla professione di Front End & User Experience, la
-      figura che si occupa di interpretare l’interazione dell’utente con
-      un prodotto...
+      {{corso.descrizione}}
     </div>
     <button class="cardbutton button-outline">
       <div>Vai al corso</div>
