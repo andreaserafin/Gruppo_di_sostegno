@@ -43,8 +43,12 @@ footer{
                 padding-left: 0;
                 li{
                     a{
-                       color: var(--bs-grey50)!important; 
+                        color: var(--bs-grey50); 
+                        &:hover{
+                            color: var(--bs-grey900);
+                        }
                     }
+                        
                     
                     text-align: left;
                     white-space: nowrap;
