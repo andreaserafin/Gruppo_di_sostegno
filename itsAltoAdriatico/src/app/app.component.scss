@@ -1,8 +1,10 @@
 nav{
     .navbar-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+    
+    
 
     a{
         text-transform: uppercase;
@@ -23,8 +25,8 @@ footer{
         flex-direction: row;
         justify-content: space-evenly;
         padding: 20px 30px;
-        background-color: var(--bs-grey200);
-
+        background-color: var(--bs-grey800);
+        color: var(--bs-grey50);
         .columns-div{
             display: flex;
             flex-direction: column;
@@ -72,10 +74,12 @@ footer{
             width: 13rem;
             margin: 0.5rem;
         }
-    }
+    }    
 }
 
 @media screen and (max-width: 780px) {
+
+
     footer{
         .container-div-footer{
     
@@ -84,9 +88,7 @@ footer{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 20px 30px;
-            background-color: var(--bs-grey200);
-    
+           
             .columns-div{
                 display: flex;
                 flex-direction: row;
@@ -103,16 +105,7 @@ footer{
                     margin: 2%;
                 }
     
-                ul{
-                    list-style-type: none;
-                    padding-left: 0;
-                    li{
-                        text-align: left;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                }
+                
             }
         }
     }

@@ -17,6 +17,10 @@ h1 {
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 600px) {
     .container-imagehome {
         overflow-x: hidden;
@@ -68,7 +72,6 @@ h1 {
 
 @media screen and (min-width: 992px) {
     .container-imagehome {
-        overflow-x: hidden;
         background-image: url(../../assets/images/its.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -188,7 +191,7 @@ h1 {
         justify-content: space-around;
         align-items: center;
         align-content: space-around;
-      }
+    }
 }
 
 .container {

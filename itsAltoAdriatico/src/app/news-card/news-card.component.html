@@ -1,18 +1,19 @@
 <div class="container">
   <div class="row">
-    <div class="col-lg-4 news-container" *ngFor="let n of news">
-      <div class="fade-img">
-        <div class="thumbnail-news">
-          <img src={{n.src}} alt="News">
+    <div class="col-lg-4" *ngFor="let n of news">
+      <div class="news-container">
+        <div class="fade-img">
+          <div class="thumbnail-news" [ngStyle]="{'background-image': 'url(' + n.src + ')', 'background-size': 'cover'  }">
+          </div>
         </div>
-      </div>
-      <div class="body-container">
-        <h2 class="news-title">{{n.titolo}}</h2>
-        <p>{{n.descrizione}}</p>
-        <button class="btn button-outline i cardbutton">
-          <div class="buttonlabel bold">Scopri di più</div>
-          <i class="bi bi-arrow-right-short"></i>
-        </button>
+        <div class="body-container">
+          <h2 class="news-title">{{n.titolo}}</h2>
+          <p>{{n.descrizione}}</p>
+          <button class="btn button-outline i cardbutton">
+            <div class="buttonlabel bold">Scopri di più</div>
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
+        </div>
       </div>
     </div>
   </div>
