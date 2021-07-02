@@ -2,14 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\models",
-    "\\src\\app\\subscription-course",
-    "\\src\\app\\subscription-openday",
-    "\\src\\assets",
-    "\\src\\assets\\images",
-    "\\src\\scss_variables"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\app\\lista-corsi",
   "PreviewInSolutionExplorer": false
 }

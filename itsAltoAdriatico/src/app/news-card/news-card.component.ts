@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NewsPreview } from '../models/data-model';
+import { ProxyApiService } from '../Services/proxy-api.service';
 
 @Component({
   selector: 'app-news-card',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsCardComponent implements OnInit {
 
-  constructor() { }
+  news: NewsPreview [] = [];
+
+  constructor(public api: ProxyApiService) { }
 
   ngOnInit(): void {
+    this.getNews();
+  }
+
+  getNews () {
+    this.api.getNewsPreview().subscribe(r => {
+      this.news = r;
+    })
   }
 
 }

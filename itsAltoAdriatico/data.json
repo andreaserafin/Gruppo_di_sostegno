@@ -40,11 +40,12 @@
         {
             "titolo": "Nuovi corsi",
             "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit.",
-            "src": "../../assets/json-images/corsi.png"
+            "src": "../../assets/json-images/fabbrica-intelligente.jpg"
         },
         {
             "titolo": "Cambio nome e dirigenza",
-            "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit."
+            "descrizione": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at condimentum erat. Proin rutrum leo quis eros pretium, sit amet pellentesque arcu hendrerit.",
+            "src": "../../assets/json-images/its_kenndy.jpg"
             
         },
         {
