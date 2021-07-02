@@ -2,7 +2,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from "@angular/forms";
 import { Router } from '@angular/router';
-import { OpendayPreview } from '../models/data-model';
+import { CoursePreview, OpendayPreview } from '../models/data-model';
 import { ProxyApiService } from '../Services/proxy-api.service';
 
 @Component({
@@ -12,9 +12,12 @@ import { ProxyApiService } from '../Services/proxy-api.service';
 })
 export class HomepageComponent implements OnInit {
 
+  i : number [] = [0, 1, 2, 3];
+
   modal: boolean = false;
 
   chartsForm: FormGroup;
+  coursePreview: CoursePreview [] = [];
 
   chart1Value: number = 97;
   chart2Value: number = 100;
@@ -36,10 +39,18 @@ export class HomepageComponent implements OnInit {
       chart2: this.chart2Value,
       chart3: this.chart3Value,
     });
+
+    this.getCourse();
   }
 
   openModal = () => {
     this.modal = true;
+  }
+
+  getCourse () {
+    this.api.getCoursePreview().subscribe(r => {
+      this.coursePreview = r;
+    })
   }
 }
 

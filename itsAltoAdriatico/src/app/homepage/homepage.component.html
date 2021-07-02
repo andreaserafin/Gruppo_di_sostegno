@@ -80,6 +80,10 @@
     <h3>CORSI ATTUALI</h3>
 </div>
 <div class="container">
-    <app-card-corso></app-card-corso>
+    <div class="row">
+        <div class="col-lg-6 list-container" *ngFor="let x of i">
+            <app-card-corso [ParentToChild]="coursePreview[x]"></app-card-corso>
+        </div>
+    </div>
 </div>
 <app-partner-banner></app-partner-banner>
