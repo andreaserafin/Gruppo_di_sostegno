@@ -24,6 +24,7 @@ import { KnobModule } from 'primeng/knob';
 import { ChartModule } from 'primeng/chart';
 import {ReactiveFormsModule} from "@angular/forms";
 import { CorsiHomeComponent } from './corsi-home/corsi-home.component';
+import { DettaglioCorsoComponent } from './dettaglio-corso/dettaglio-corso.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CorsiHomeComponent } from './corsi-home/corsi-home.component';
     NewsCardComponent,
     OpenDayCardComponent,
     PartnerBannerComponent,
-    CorsiHomeComponent
+    CorsiHomeComponent,
+    DettaglioCorsoComponent
   ],
   imports: [
     BrowserModule,

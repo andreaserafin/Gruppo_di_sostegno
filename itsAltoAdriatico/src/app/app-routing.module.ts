@@ -7,7 +7,7 @@ import { PartnerBannerComponent } from './partner-banner/partner-banner.componen
 import { CardCorsoComponent } from './card-corso/card-corso.component';
 import { ListaCorsiComponent } from './lista-corsi/lista-corsi.component';
 import { HomepageComponent } from './homepage/homepage.component';
-
+import { DettaglioCorsoComponent } from './dettaglio-corso/dettaglio-corso.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { NewsListComponent } from './news-list/news-list.component';
@@ -50,8 +50,12 @@ const routes: Routes = [
     path: 'sub-openday',
     component: SubscriptionOpendayComponent,
     pathMatch: 'full'
-  }
-];
+  },
+
+
+
+  { path: 'dettaglio-corso', component:  DettaglioCorsoComponent}
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

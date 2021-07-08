@@ -1,0 +1,293 @@
+.bordi-alti{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bordi{
+    border-radius: 10px;
+}
+
+.sfondo-card{
+    border: none;
+    background-color: var(--bs-grey100);
+    border-radius: 10px;
+}
+
+.titolo-card{
+    background-color: var(--bs-primary700);
+    color: var(--bs-grey50);
+    font-size: 32px;
+    text-align: center;
+    //width: 100%;
+}
+
+.titolo-card-grigia{
+    width: 100%; 
+    text-align: center; 
+    background-color: var(--bs-grey800);
+    font-size: 32px;
+    color: var(--bs-grey50);
+}
+
+.treck_container{
+    margin-top: 20px;
+    width: auto;
+    height: 34px;
+    border-radius: 10px;
+    background-color: var(--bs-primary50);
+    color: var(--bs-primary900);
+    
+}
+.treck-text{
+    padding: 4px;
+    text-align: center;
+    margin: 5px;
+    color: var(--bs-primary900);
+}
+.treck{
+    margin-top: 25px;
+    color: var(--bs-primary900);
+}
+
+a{
+    text-decoration:none;
+}
+
+/* .left-icon-holder {
+  position:relative;
+}
+.left-icon-holder .bi {
+  position:absolute;
+  line-height: 24px;
+  top:50%;
+  margin-top: -12px; /* Half of line height to keep left middle postion of container
+  left: 10px;
+} */
+
+//Imm
+.classe_personalizzata_con_immagine_di_bg{
+  background-image: url('../../assets/img-dettaglio-corso/Front\ End.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*.news_wallpaper {
+    figure {
+        position: relative;
+    }
+
+    &_image {
+        object-fit: cover;
+        object-position: 0 -5%;
+        width: 100%;
+        height: 300px;
+    }
+
+    figcaption {
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        //background: var(--bs-gray50);
+        background: rgba(white, 0.4);
+        backdrop-filter: blur(30px);
+        color: var(--bs-gray900);
+        padding: 10px;
+        border-radius: 5px;
+        width: 515px;
+        height: 154px;
+        position: absolute;
+    }
+
+    &_title {
+        color: var(gray900);
+        text-align: center;
+        margin-top: 40px;
+    }
+}*/
+
+
+//CARD CORSO
+.card-corso {
+  background-image: url("../../assets/img-dettaglio-corso/Front\ End.jpg");
+  height: 267px;
+  max-width: 655px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card-container {
+  margin: 15%;
+  backdrop-filter: blur(5px) contrast(35%) brightness(1.5);
+  color: var(gray900);
+  color: var(--bs-gray900);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  max-width: 80%;
+  height: fit-content;
+}
+  
+  figure,
+  figcaption {
+    margin: 0;
+    padding: 0;
+  }
+
+  .altri-corsi {
+    display: inline-block;
+    position: relative;
+  }
+  
+  figure img {
+    display: block;
+  }
+  
+  .thumbnail-corso{
+    width: 100%;
+    height: 100%
+  }
+
+  figure figcaption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(white, 0.7);
+    backdrop-filter: blur(30px);
+    color: var(gray900);
+    padding: 2%;
+    border-radius: 5px;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .cardtitle{
+    margin: 3%;
+  }
+
+  .h3bold{
+    font-family: "roboto-bold"; 
+  }
+
+  .cardbody {
+    margin-top: -1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: "roboto-regular";
+    font-size: 16px;
+    line-height: 20px;
+    order: 02;
+  }
+
+  .cardbutton {
+    width: 113px;
+    height: 40px;
+    color: var(--bs-primary700);
+    border: solid 1px;
+    border-color: var(--bs-primary700);
+    border-radius: 8px;
+    background-color: #ffffff00;
+    order: 03;
+    align-self: flex-end;
+    margin-bottom: 3%;
+    margin-right: 3%;
+  }
+  
+  /*.cardbody{
+    margin-top: -1%;
+    margin-left: 3%;
+    width: 100%;
+    font-family: 'roboto-regular';
+    font-size: 16px;
+    line-height: 20px;
+  }*/
+  
+  /*.cardtitle{
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 100%;
+  }*/
+  
+  /*.cardbutton{
+    position: relative;
+    right: -75%;
+    top: -3%;
+    //width: 100px;
+    //height: 40px;
+    //border: solid 1px;
+    //border-color: var(--bs-primary700);
+    //border-radius: 10px;
+    //background-color: #ffffff00;
+    //color: var(--bs-primary700);
+  }*/
+
+  .button-fill{
+    color: var(--bs-grey50)!important;
+    background-color: var(--bs-success900)!important;
+    border-radius: 0.5rem !important ;
+    i{
+      margin:0 0.4rem;
+    }
+    &:hover{
+      background-color: var(--bs-success900)!important;
+    }
+  }
+  
+
+
+
+//HR
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--bs-primary700);
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.a-capo{
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+	/*footer {
+		position: absolute;
+		width: 100%;
+		bottom: 0px;
+		height: 480px;
+		background-color: #111;
+		color: white;
+	}
+	body {
+		margin-bottom: 500px;
+		background-color: #F9F9F9;
+	}*/
+  /*.info{
+    clear: both;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .attivita{
+    width: 100%;
+  }*/
+} 
