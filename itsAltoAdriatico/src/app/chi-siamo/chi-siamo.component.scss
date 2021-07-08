@@ -1,0 +1,111 @@
+.classe_personalizzata_con_immagine_di_bg{
+  background-image: url(../../assets/img-chi_simao-contatti/banner-generico-05.jpg);
+} 
+
+.treck_container {
+  margin-top: 20px;
+  width: auto;
+  height: 34px;
+  border-radius: 10px;
+  background-color: var(--bs-grey100);
+  color: var(--bs-primary900);
+
+}
+
+.treck-text {
+  padding: 4px;
+  text-align: center;
+  margin: 5px;
+}
+
+.treck {
+  margin-top: 25px;
+  color: var(--bs-primary700);
+}
+
+.info_container {
+  margin-top: 30px;
+  border-top: 4px solid var(--bs-grey300);
+  border-bottom: 4px solid var(--bs-grey300);
+  padding: 25px;
+  font-style: var(--bs-h4);
+}
+
+.offerts_row {
+  .container_v {
+    padding: 10px;
+
+    .container_offerts {
+      margin-top: 40px;
+      align-items: center;
+
+      .img_offerts {
+        margin-left: 220px;
+        margin-bottom: 10px;
+
+      }
+
+      .description_txt {
+        padding: 20px;
+        text-align: center;
+        font-style: var(--bs-body);
+      }
+
+      .title_txt {
+        text-align: center;
+        font-style: var(--bs-h3);
+      }
+    }
+  }
+
+  .offerts_container {
+    border-bottom: 4px solid var(--bs-grey300);
+    padding: 10px;
+
+    .container_offerts {
+      margin-top: 40px;
+      align-items: center;
+
+      .img_offerts {
+        margin-left: 220px;
+        margin-bottom: 10px;
+
+      }
+
+      .description_txt {
+        padding: 20px;
+        text-align: center;
+        font-style: var(--bs-body);
+      }
+
+      .title_txt {
+        text-align: center;
+        font-style: var(--bs-h3);
+      }
+    }
+  }
+}
+
+.container_corsi {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: var(--bs-grey50);
+  border-radius: 30px;
+
+  .title_box {
+    margin-top: 50px;
+    text-align: center;
+
+  }
+
+  .description_txt {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .button_corsi {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+}

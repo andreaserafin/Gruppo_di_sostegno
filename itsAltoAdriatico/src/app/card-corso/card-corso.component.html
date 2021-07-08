@@ -1,0 +1,11 @@
+<div class="card-corso" [ngStyle]="{'background-image': 'url(' + corso.src + ')', 'background-size': 'cover'  }">
+  <div class="card-container">
+    <h3 class="h3bold cardtitle">{{corso.nome}}</h3>
+    <div class="cardbody">
+      {{corso.descrizione}}
+    </div>
+    <button class="cardbutton button-outline" (click)="route.navigateByUrl('/dettaglio-corso')">
+      <div>Vai al corso</div>
+    </button>
+  </div>
+</div>

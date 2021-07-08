@@ -1,0 +1,59 @@
+.card-corso {
+  height: 267px;
+  max-width: 655px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 1%;
+  margin-top: 1%;
+}
+
+.card-container {
+  margin: 15%;
+  backdrop-filter: blur(5px) contrast(35%) brightness(1.5);
+  color: var(gray900);
+  color: var(--bs-gray900);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  max-width: 80%;
+  height: fit-content;
+}
+
+.cardtitle{
+  margin: 3%;
+}
+
+.h3bold {
+  font-family: "roboto-bold";
+}
+
+.cardbody {
+  margin-top: -1%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: "roboto-regular";
+  font-size: 16px;
+  line-height: 20px;
+  order: 02;
+}
+
+.cardbutton {
+  width: 113px;
+  height: 40px;
+  color: var(--bs-primary700);
+  border: solid 1px;
+  border-color: var(--bs-primary700);
+  border-radius: 8px;
+  background-color: #ffffff00;
+  order: 03;
+  align-self: flex-end;
+  margin-bottom: 3%;
+  margin-right: 3%;
+}

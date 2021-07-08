@@ -1,0 +1,31 @@
+<app-thumbnail-page></app-thumbnail-page>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <div class="treck_container">
+        <div class="treck-text">Home</div>
+      </div>
+    </li>
+    <li class="page-item">
+      <div class="treck">
+        <i class="bi bi-caret-right-fill"></i>
+      </div>
+    </li>
+    <li class="page-item">
+      <div class="treck_container">
+        <div class="treck-text">Chi-siamo</div>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<h2>CORSI ATTUALI</h2>
+
+<hr />
+
+<div class="lista-container">
+  <div *ngFor="let item of corsi">
+    <app-card-corso class="card-corso" [ParentToChild]="item"></app-card-corso>
+  </div>
+</div>

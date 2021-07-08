@@ -1,0 +1,89 @@
+<div class="container-imagehome">
+    <div class="chi-siamo">
+        <h1 class="title-light">ITS <span class="title-bold">ALTO ADRIATICO</span> PORDENONE</h1>
+        <p class="card-text">Gli ITS sono scuole di eccellenza ad alta specializzazione tecnologica.
+            Promuovono corsi post diploma di specializzazione tecnica che hanno un approccio pratico
+            alle materie e una forte relazione con le aziende facilitando allo studente
+            l’inserimento nel mondo del lavoro.</p>
+        <form [formGroup]="chartsForm">
+            <div class="row chart-row">
+                <div class="col-lg-4 chart-column">
+                    <h1>{{chart1Value}}%</h1>
+                    <div style="text-align: center;">
+                        <p>Tasso di occupazione dei diplomati ITS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 chart-column">
+                    <h1>{{chart2Value}}%</h1>
+                    <div style="text-align: center;">
+                        <p>Tasso di impiego coerente con il percorso di studio</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 chart-column">
+                    <h1>{{chart3Value}}%</h1>
+                    <div style="text-align: center;">
+                        <p>Docenza proveniente dal mondo imprenditoriale</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="card card-student">
+            <div class="row">
+                <div class="col-lg-4 image-card-button">
+                    <img src="../../assets/images/student.jpg" alt="Scuole">
+                </div>
+                <div class="body col-lg-8 col-sm-12">
+                    <div class="card-body">
+                        <h3 class="card-title">Sei uno studente?</h3>
+                        <p class="card-text">Scopri i nostri corsi formativi e scegli quello che più ti
+                            interessa.
+                        </p>
+                        <a href="#course" type="button" class="btn button-fill">
+                            <i class="bi bi-book"></i>
+                            Scopri di più
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card card-company">
+            <div class="row">
+                <div class="col-lg-4 image-card-button">
+                    <img src="../../assets/images/company.jpg" alt="Azienda">
+                </div>
+                <div class="body col-lg-8 col-sm-12">
+                    <div class="card-body">
+                        <h3 class="card-title ">Sei un'azienda?</h3>
+                        <p class="card-text ">Seleziona tra i nostri studenti i profili più adatti per te. </p>
+                        <a href="#" type="button " class="btn button-fill">
+                            <i class="bi bi-building"></i>
+                            Scopri di più
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subtitle-gradient">
+    <h3>OPEN DAY</h3>
+</div>
+<app-open-day-card>
+</app-open-day-card>
+<div class="subtitle-gradient">
+    <h3>ULTIME NEWS</h3>
+</div>
+<app-news-card></app-news-card>
+<div class="subtitle-gradient" id="course">
+    <h3>CORSI ATTUALI</h3>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 list-container" *ngFor="let x of i">
+            <app-card-corso [ParentToChild]="coursePreview[x]"></app-card-corso>
+        </div>
+    </div>
+</div>
+<app-partner-banner></app-partner-banner>
