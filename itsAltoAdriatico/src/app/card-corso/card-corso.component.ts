@@ -1,5 +1,6 @@
 import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CoursePreview, OpendayPreview } from '../models/data-model';
 import { ProxyApiService } from '../Services/proxy-api.service';
 
@@ -14,7 +15,7 @@ export class CardCorsoComponent implements OnInit {
   
   coursePreview: CoursePreview[] | undefined;
 
-  constructor(private proxyApi: ProxyApiService) { 
+  constructor(private proxyApi: ProxyApiService, public route: Router) { 
   }
 
   ngOnInit(): void {

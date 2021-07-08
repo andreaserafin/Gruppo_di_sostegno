@@ -4,7 +4,7 @@
     <div class="cardbody">
       {{corso.descrizione}}
     </div>
-    <button class="cardbutton button-outline">
+    <button class="cardbutton button-outline" (click)="route.navigateByUrl('/dettaglio-corso')">
       <div>Vai al corso</div>
     </button>
   </div>

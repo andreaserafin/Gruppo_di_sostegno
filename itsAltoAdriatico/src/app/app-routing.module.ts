@@ -51,11 +51,11 @@ const routes: Routes = [
     component: SubscriptionOpendayComponent,
     pathMatch: 'full'
   },
-
-
-
-  { path: 'dettaglio-corso', component:  DettaglioCorsoComponent}
-
+  { 
+    path: 'dettaglio-corso',
+    component:  DettaglioCorsoComponent
+  }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
