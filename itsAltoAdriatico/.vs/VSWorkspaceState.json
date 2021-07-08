@@ -10,6 +10,6 @@
     "\\src\\assets\\images",
     "\\src\\scss_variables"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
